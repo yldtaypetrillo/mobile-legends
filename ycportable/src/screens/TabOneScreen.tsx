@@ -27,7 +27,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
 
   return (
     <View style={styles.container}>
-      {state.map((campaign, index) => {
+      {state.map((campaign) => {
         return (
           <View key={campaign.id}>
             <Text>{campaign.name}</Text>
