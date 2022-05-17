@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
@@ -5,10 +6,36 @@ import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+  const [state, setState] = useState<any[]>([])
+
+  useEffect(() => {
+    fetch(
+      "https://viserion.yieldify-dev.com/v2/organizations/1/websites/1/campaigns",
+      {headers: new Headers({
+        // TODO: populate from auth state (currently requires a manual enter)
+        'Authorization': '',
+        'Content-Type': 'application/json'
+    }), }
+    )
+    .then(response => response.json())
+    .then(json => {
+      setState(json); // access json.body here
+    })
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      {state.map((campaign) => {
+        return (
+        <View>
+          <Text>{`name: ${campaign.name}`}</Text>
+        </View>);
+      })}
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
   );
