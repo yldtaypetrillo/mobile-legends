@@ -7,8 +7,13 @@ import { AuthContext } from '../context/authContext';
 import { theme } from '../theme';
 
 import { AuthSessionResult, makeRedirectUri, startAsync } from "expo-auth-session";
+import getSettings from '../config/GetSettings';
 
 // Source: https://github.dev/GuyAvraham/expo-auth0-example-2020
+const {
+  auth0: { auth0Domain, clientId }
+} = getSettings();
+
 interface StringMap {
   [key: string]: string;
 }
@@ -26,12 +31,10 @@ export default function LoginScreen() {
   const { signIn } = useContext(AuthContext);
 
   const loginWithAuth0 = async (): Promise<boolean> => {
-    const auth0Domain = `<DO_NOT_COMMIT_ACTUAL_VALUE>`;
-    const auth0ClientId = `<DO_NOT_COMMIT_ACTUAL_VALUE>`;
 
     const redirectUrl = makeRedirectUri({ useProxy: true });
     const queryString = {
-      client_id: auth0ClientId,
+      client_id: clientId,
       response_type: "token",
       redirect_uri: redirectUrl,
     };
@@ -73,7 +76,7 @@ export default function LoginScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login Screen</Text>
-      <View>
+      {/* <View>
         <Text style={styles.label}>Email Address</Text>
         <Input error={false} placeholder={'Enter your email'} />
       </View>
@@ -81,7 +84,7 @@ export default function LoginScreen() {
       <View>
         <Text style={styles.label}>Password</Text>
         <Input error={false} placeholder={'Enter your password'} isPassword />
-      </View>
+      </View> */}
 
       <Button onPress={login} title={'Click here to login'} />
     </View>
@@ -98,6 +101,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    // marginBottom: '2rem',
   },
   label: {
     color: theme.colors.black,
