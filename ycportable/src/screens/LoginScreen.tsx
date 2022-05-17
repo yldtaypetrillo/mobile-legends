@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useContext } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { LoginButton } from '../components/LoginButton';
 import { Input } from '../components/Input';
 
 import { AuthContext } from '../context/authContext';
@@ -86,7 +87,7 @@ export default function LoginScreen() {
         <Input error={false} placeholder={'Enter your password'} isPassword />
       </View> */}
 
-      <Button onPress={login} title={'Click here to login'} />
+      <LoginButton onPress={login} isLoading={false} />
     </View>
   );
 }
