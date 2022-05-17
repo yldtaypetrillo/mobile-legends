@@ -9,6 +9,7 @@ import * as Linking from 'expo-linking';
 
 import { RootStackParamList } from '../types';
 
+// TODO: learn about deep linking
 const linking: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.makeUrl('/')],
   config: {
