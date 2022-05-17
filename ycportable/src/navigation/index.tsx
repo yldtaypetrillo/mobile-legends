@@ -20,7 +20,7 @@ import {
   RootStackParamList,
   RootTabParamList,
   RootTabScreenProps,
-} from '../types';
+} from '../../types';
 
 export default function Navigation({}: {}) {
   const [isSignedIn, setIsSignedIn] = useState(false);
