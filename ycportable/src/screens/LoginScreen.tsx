@@ -1,91 +1,15 @@
-import * as React from "react";
-import { useContext } from 'react';
+import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { LoginButton } from '../components/LoginButton';
-import { Input } from '../components/Input';
-
-import { AuthContext } from '../context/authContext';
+import { useAuth } from '../hooks/useAuth';
 import { theme } from '../theme';
 
-import { AuthSessionResult, makeRedirectUri, startAsync } from "expo-auth-session";
-import getSettings from '../config/GetSettings';
-
-// Source: https://github.dev/GuyAvraham/expo-auth0-example-2020
-const {
-  auth0: { auth0Domain, clientId }
-} = getSettings();
-
-interface StringMap {
-  [key: string]: string;
-}
-
-const toQueryString = (params: StringMap) =>
-  "?" +
-  Object.entries(params)
-    .map(
-      ([key, value]) =>
-        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
-    )
-    .join("&");
-
 export default function LoginScreen() {
-  const { signIn } = useContext(AuthContext);
-
-  const loginWithAuth0 = async (): Promise<boolean> => {
-
-    const redirectUrl = makeRedirectUri({ useProxy: true });
-    const queryString = {
-      client_id: clientId,
-      response_type: "token",
-      redirect_uri: redirectUrl,
-    };
-
-    let authUrl = `https://${auth0Domain}/authorize` + toQueryString(queryString);
-
-    console.log(`Redirect URL => ${redirectUrl}`);
-    console.log(`Auth URL => ${authUrl}`);
-
-    const result = await startAsync({
-      authUrl: authUrl,
-    });
-
-    console.log(`result => ${JSON.stringify(result, null, 2)}`);
-
-    return handleLoginResult(result);
-  };
-
-  const handleLoginResult = (result: AuthSessionResult): boolean => {
-    if (result.type !== 'success') {
-      return false;
-    }
-
-    // TODO: share token around the app
-    const token = result.params['access_token'];
-
-    return true;
-  }
-
-  const login = async () => {
-    console.log(`BEGIN login()`);
-    const authenticated = await loginWithAuth0();
-    if(authenticated) {
-      signIn();
-    }
-    console.log(`END login()`);
-  }
+  const { login } = useAuth();
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login Screen</Text>
-      {/* <View>
-        <Text style={styles.label}>Email Address</Text>
-        <Input error={false} placeholder={'Enter your email'} />
-      </View>
-
-      <View>
-        <Text style={styles.label}>Password</Text>
-        <Input error={false} placeholder={'Enter your password'} isPassword />
-      </View> */}
 
       <LoginButton onPress={login} isLoading={false} />
     </View>
@@ -102,7 +26,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    // marginBottom: '2rem',
   },
   label: {
     color: theme.colors.black,

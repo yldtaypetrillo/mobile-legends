@@ -8,39 +8,25 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
-import { useState } from 'react';
 import { Pressable } from 'react-native';
-import { AuthContext } from '../context/authContext';
-import LoginScreen from '../screens/LoginScreen';
-import ModalScreen from '../screens/ModalScreen';
-import NotFoundScreen from '../screens/NotFoundScreen';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
 import {
   RootStackParamList,
   RootTabParamList,
   RootTabScreenProps,
 } from '../../types';
+import { useAuth } from '../hooks/useAuth';
+import LoginScreen from '../screens/LoginScreen';
+import ModalScreen from '../screens/ModalScreen';
+import NotFoundScreen from '../screens/NotFoundScreen';
+import TabOneScreen from '../screens/TabOneScreen';
+import TabTwoScreen from '../screens/TabTwoScreen';
 
 export default function Navigation({}: {}) {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-
-  const authContext = React.useMemo(
-    () => ({
-      isSignedIn,
-      signIn: () => setIsSignedIn(true),
-      signOut: () => setIsSignedIn(false),
-    }),
-    [isSignedIn],
-  );
+  const { isSignedIn } = useAuth();
 
   return (
     <NavigationContainer>
-      {isSignedIn ? (
-        <RootNavigator />
-      ) : (
-        <LoginNavigator authContext={authContext} />
-      )}
+      {isSignedIn ? <RootNavigator /> : <LoginNavigator />}
     </NavigationContainer>
   );
 }
@@ -51,17 +37,15 @@ export default function Navigation({}: {}) {
  */
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-function LoginNavigator({ authContext }: { authContext: any }) {
+function LoginNavigator() {
   return (
-    <AuthContext.Provider value={authContext}>
-      <Stack.Navigator>
-        <Stack.Screen
-          name='Login'
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
-    </AuthContext.Provider>
+    <Stack.Navigator>
+      <Stack.Screen
+        name='Login'
+        component={LoginScreen}
+        options={{ headerShown: false }}
+      />
+    </Stack.Navigator>
   );
 }
 
