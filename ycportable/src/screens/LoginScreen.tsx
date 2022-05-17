@@ -1,9 +1,11 @@
 import * as React from "react";
-import { useContext } from "react";
-import { Button, StyleSheet } from "react-native";
+import { useContext } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { Input } from '../components/Input';
 
-import { Text, View } from "../components/Themed";
-import { AuthContext } from "../context/authContext";
+import { AuthContext } from '../context/authContext';
+import { theme } from '../theme';
+
 import { AuthSessionResult, makeRedirectUri, startAsync } from "expo-auth-session";
 
 // Source: https://github.dev/GuyAvraham/expo-auth0-example-2020
@@ -71,7 +73,17 @@ export default function LoginScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login Screen</Text>
-      <Button onPress={login} title={"Click here to login"} />
+      <View>
+        <Text style={styles.label}>Email Address</Text>
+        <Input error={false} placeholder={'Enter your email'} />
+      </View>
+
+      <View>
+        <Text style={styles.label}>Password</Text>
+        <Input error={false} placeholder={'Enter your password'} isPassword />
+      </View>
+
+      <Button onPress={login} title={'Click here to login'} />
     </View>
   );
 }
@@ -79,16 +91,17 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 12,
   },
   title: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
+  label: {
+    color: theme.colors.black,
+    fontSize: 12,
+    marginBottom: 4,
   },
 });
