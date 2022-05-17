@@ -1,4 +1,4 @@
-import { CampaignConfiguration, EmailCampaign } from '..'
+import { CampaignConfiguration, EmailCampaign } from '../..'
 
 const EMAIL_CAMPAIGN_TYPE = 'EmailCampaign';
 
@@ -9,9 +9,3 @@ export const isEmailCampaign = (
 export interface returnImageProps {
   campaign: CampaignConfiguration;
 };
-
-// create email campaign component
-// create normal campaign component
-
-
-// if 

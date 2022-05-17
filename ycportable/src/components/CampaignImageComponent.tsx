@@ -1,6 +1,6 @@
 import { returnImageProps } from "./utils"
 import { Image } from 'react-native';
-import { Campaign } from "..";
+import { Campaign } from "../..";
 
 export function CampaignImageComponent({ campaign }: returnImageProps) {
     return (
