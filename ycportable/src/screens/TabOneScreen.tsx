@@ -4,25 +4,30 @@ import { CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';
 import { CampaignImageComponent } from '../components/CampaignImageComponent';
 import { EmailCampaignImageComponent } from '../components/EmailCampaignImageComponent';
-import { returnImageProps, isEmailCampaign } from '../components/utils';
+import { isEmailCampaign, returnImageProps } from '../components/utils';
+import { useAuth } from '../hooks/useAuth';
 
+export default function TabOneScreen({
+  navigation,
+}: RootTabScreenProps<'TabOne'>) {
+  const [state, setState] = useState<CampaignConfiguration[]>([]);
+  const { token } = useAuth();
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
-  const [state, setState] = useState<CampaignConfiguration[]>([])
   useEffect(() => {
     fetch(
-      "https://viserion.yieldify-dev.com/v2/organizations/1/websites/1/campaigns",
+      'https://viserion.yieldify-dev.com/v2/organizations/1/websites/1/campaigns',
       {
         headers: new Headers({
-          'Authorization': 'Bearer ',
-          'Content-Type': 'application/json'
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
         }),
       }
     )
-      .then(response => response.json())
-      .then(json => {
+      .then((response) => response.json())
+      .then((json) => {
         setState(json); // access json.body here
-      }).catch((err) => alert(err))
+      })
+      .catch((err) => alert(err));
   }, []);
 
   return (
@@ -32,17 +37,19 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
           <View key={campaign.id}>
             <Text>{campaign.name}</Text>
             <ReturnImage campaign={campaign}></ReturnImage>
-          </View>)
+          </View>
+        );
       })}
     </View>
   );
 }
 
 function ReturnImage({ campaign }: returnImageProps) {
-  return isEmailCampaign(campaign) ?
+  return isEmailCampaign(campaign) ? (
     <EmailCampaignImageComponent campaign={campaign} />
-    :
+  ) : (
     <CampaignImageComponent campaign={campaign} />
+  );
 }
 
 const styles = StyleSheet.create({
@@ -61,4 +68,3 @@ const styles = StyleSheet.create({
     width: '80%',
   },
 });
-

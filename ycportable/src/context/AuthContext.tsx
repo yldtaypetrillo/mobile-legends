@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { createContext, ReactNode, useState } from 'react';
 import {
   AuthSessionResult,
@@ -37,7 +38,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     Object.entries(params)
       .map(
         ([key, value]) =>
-          `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
+          `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
       )
       .join('&');
 
@@ -51,6 +52,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
   const loginWithAuth0 = async (): Promise<boolean> => {
     const redirectUrl = makeRedirectUri({ useProxy: true });
+
     const queryString = {
       client_id: clientId,
       response_type: 'token',
@@ -60,14 +62,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
     let authUrl =
       `https://${auth0Domain}/authorize` + toQueryString(queryString);
 
-    console.log(`Redirect URL => ${redirectUrl}`);
-    console.log(`Auth URL => ${authUrl}`);
-
     const result = await startAsync({
       authUrl: authUrl,
     });
-
-    console.log(`result => ${JSON.stringify(result, null, 2)}`);
 
     return handleLoginResult(result);
   };
@@ -77,7 +74,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
       return false;
     }
 
-    // TODO: share token around the app
     const token = result.params['access_token'];
     setToken(token);
 
@@ -85,12 +81,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
   };
 
   const login = async () => {
-    console.log(`BEGIN login()`);
     const authenticated = await loginWithAuth0();
     if (authenticated) {
       signIn();
     }
-    console.log(`END login()`);
   };
 
   return (
