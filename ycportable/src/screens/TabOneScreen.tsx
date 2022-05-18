@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import React = require('react');
+import React,{ useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 import { CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';

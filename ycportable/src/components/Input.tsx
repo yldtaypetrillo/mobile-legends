@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   TextInput,
   StyleSheet,
@@ -7,9 +7,7 @@ import {
   Pressable,
 } from 'react-native';
 import { theme } from '../theme';
-
 import { Eye, EyeSlash } from 'phosphor-react-native';
-import React = require('react');
 
 interface Props extends TextInputProps {
   error: boolean;
