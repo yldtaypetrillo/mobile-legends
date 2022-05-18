@@ -6,6 +6,7 @@ export const theme = {
     lightblue: '#0088F20D',
     black: '#242021',
     grey: '#C2C2C2',
+    lightgrey: '#F4F4F4',
     error_red: '#CC0000',
   },
 };
