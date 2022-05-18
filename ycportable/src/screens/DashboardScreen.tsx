@@ -109,7 +109,7 @@ function ReturnImage({ campaign }: returnImageProps) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: '15%',
+    paddingTop: '8%',
   },
   main: {
     backgroundColor: '#FFF',

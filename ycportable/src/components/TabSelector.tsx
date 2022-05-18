@@ -43,10 +43,19 @@ export function TabSelector({ onSelect }: TabSelectorProps) {
   }
 
   return (
-    <ScrollView horizontal={true} style={styles.container}>
+    <ScrollView
+      horizontal={true}
+      style={styles.container}
+      contentContainerStyle={{
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 8,
+      }}
+    >
       {filters.map((filter) => {
         return (
           <TouchableOpacity
+            key={filter.id}
             onPress={() => handleSelectTab(filter)}
             style={[
               styles.tabSelector,
@@ -71,11 +80,12 @@ export function TabSelector({ onSelect }: TabSelectorProps) {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 8,
+    maxHeight: 50,
   },
   tabSelector: {
     fontSize: 14,
     paddingHorizontal: 16,
-    paddingVertical: 8,
+    paddingVertical: 4,
     borderRadius: 100,
 
     borderWidth: 1,
