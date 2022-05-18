@@ -53,7 +53,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const loginWithAuth0 = async (): Promise<boolean> => {
     const redirectUrl = makeRedirectUri({ useProxy: true });
 
-    console.log(`redirectUrl => ${redirectUrl}`);
     const queryString = {
       client_id: clientId,
       response_type: 'token',
