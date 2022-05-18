@@ -16,6 +16,7 @@ import { EmailCampaignImageComponent } from '../components/EmailCampaignImageCom
 import { Input } from '../components/Input';
 import { TabSelector } from '../components/TabSelector';
 import { Header } from '../components/Header';
+import { CampaignButton } from '../components/CampaignButton';
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
 import { fetchCampaigns } from '../utils/fetchCampaigns';
@@ -109,7 +110,7 @@ export default function DashboardScreen({
           'Content-Type': 'application/json',
         }),
         method: 'POST',
-      },
+      }
     )
       .then((response) => response.json())
       .then((json) => {
@@ -180,7 +181,14 @@ export default function DashboardScreen({
                     </View>
                     <ReturnImage campaign={campaign}></ReturnImage>
                   </View>
-                  <TouchableOpacity
+                  <CampaignButton
+                    campaign={campaign}
+                    onPress={() => {
+                      setSelectedCampaign(campaign);
+                      refRBSheet.current.open();
+                    }}
+                  />
+                  {/* <TouchableOpacity
                     onPress={() => {
                       setSelectedCampaign(campaign);
                       refRBSheet.current.open();
@@ -192,7 +200,7 @@ export default function DashboardScreen({
                       {formatCampaignState(campaign)}
                     </Text>
                     <CaretDown size={16} color={theme.colors.white} />
-                  </TouchableOpacity>
+                  </TouchableOpacity> */}
                   <RBSheet
                   ref={refRBSheet}
                   closeOnDragDown={true}
