@@ -7,6 +7,7 @@ export const theme = {
     black: '#242021',
     grey: '#C2C2C2',
     lightgrey: '#F4F4F4',
+    neutralMediumDark: '#8F8F8F',
     error_red: '#CC0000',
   },
 };

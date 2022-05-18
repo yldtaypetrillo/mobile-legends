@@ -7,6 +7,7 @@ import { EmailCampaignImageComponent } from '../components/EmailCampaignImageCom
 import { Input } from '../components/Input';
 import { TabSelector } from '../components/TabSelector';
 import { Header } from '../components/Header';
+import { CampaignButton } from '../components/CampaignButton';
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
 import { fetchCampaigns } from '../utils/fetchCampaigns';
@@ -156,13 +157,14 @@ export default function DashboardScreen({
               <View key={campaign.id}>
                 <Text>{campaign.name}</Text>
                 <ReturnImage campaign={campaign}></ReturnImage>
-                <Button
+                <CampaignButton campaign={campaign} />
+                {/* <Button
                 title={formatCampaignState(campaign)}
                 onPress={() => {
                   setSelectedCampaign(campaign);
                   refRBSheet.current.open();
                 }}
-              ></Button>
+              ></Button> */}
               <RBSheet
                 ref={refRBSheet}
                 closeOnDragDown={true}
