@@ -202,25 +202,25 @@ export default function DashboardScreen({
                     <CaretDown size={16} color={theme.colors.white} />
                   </TouchableOpacity> */}
                   <RBSheet
-                  ref={refRBSheet}
-                  closeOnDragDown={true}
-                  closeOnPressMask={true}
-                  customStyles={{
-                    container:{borderTopEndRadius:40,borderTopStartRadius:40, height:200},
-                    wrapper: {
-                      backgroundColor: "rgba(1,1,1,0.5)",
-                    },
-                    draggableIcon: {
-                      backgroundColor: "#000",
-                    },
-                  }}
-                >
-                  <View style={{justifyContent: "center",alignItems: "center", paddingBottom:20, borderBottomColor:'#F4F4F4', borderBottomWidth:1}}>
-                    <Text style={{fontSize:19, fontWeight:'500'}}>{selectedCampaign?.name}</Text>
-                    <Text style={{color:'#AFAFAF', fontSize:14,fontWeight:'400'}}>#{selectedCampaign?.id}</Text>
-                  </View>
-                  {<UpdateOptions campaign={selectedCampaign!} />}
-                </RBSheet>
+                    ref={refRBSheet}
+                    closeOnDragDown={true}
+                    closeOnPressMask={true}
+                    customStyles={{
+                      container: { borderTopEndRadius: 40, borderTopStartRadius: 40, height: 200 },
+                      wrapper: {
+                        backgroundColor: "rgba(1,1,1,0.5)",
+                      },
+                      draggableIcon: {
+                        backgroundColor: "#000",
+                      },
+                    }}
+                  >
+                    <View style={{ justifyContent: "center", alignItems: "center", paddingBottom: 20, borderBottomColor: '#F4F4F4', borderBottomWidth: 1 }}>
+                      <Text style={{ fontSize: 19, fontWeight: '500' }}>{selectedCampaign?.name}</Text>
+                      <Text style={{ color: '#AFAFAF', fontSize: 14, fontWeight: '400' }}>#{selectedCampaign?.id}</Text>
+                    </View>
+                    {<UpdateOptions campaign={selectedCampaign!} />}
+                  </RBSheet>
                 </View>
                 <View style={styles.separator} />
 
@@ -228,15 +228,15 @@ export default function DashboardScreen({
             );
           })}
 
-          <Button onPress={clickedPreviousPageButton} title="PreviousPage">
-            Previous Page
-          </Button>
+          <View style={styles.pagination}>
+            <Button onPress={clickedPreviousPageButton} title={"<"}>
+            </Button>
 
-          <Text>{pageNumber}</Text>
+            <Text>Page: {pageNumber}</Text>
 
-          <Button onPress={clickedNextPageButton} title="NextPage">
-            Next Page
-          </Button>
+            <Button onPress={clickedNextPageButton} title={">"}>
+            </Button>
+          </View>
         </ScrollView>
       </View>
     </View>
@@ -254,17 +254,17 @@ export default function DashboardScreen({
 
     const startButton = (
       <Pressable
-      style={({ pressed }) => [
-        {
-          backgroundColor: pressed
-            ? 'rgb(210, 230, 255)'
-            : 'white'
-        },
-        styles.button
-      ]} 
+        style={({ pressed }) => [
+          {
+            backgroundColor: pressed
+              ? 'rgb(210, 230, 255)'
+              : 'white'
+          },
+          styles.button
+        ]}
         onPress={() => handleUpdateClick(campaign, startOption)}
       >
-        <Text style={{fontSize:19}}>{startOption}</Text>
+        <Text style={{ fontSize: 19 }}>{startOption}</Text>
       </Pressable>
     );
 
@@ -277,9 +277,9 @@ export default function DashboardScreen({
               : 'white'
           },
           styles.button
-        ]}        onPress={() => handleUpdateClick(campaign, pauseOption)}
+        ]} onPress={() => handleUpdateClick(campaign, pauseOption)}
       >
-        <Text style={{fontSize:19}}>{pauseOption}</Text>
+        <Text style={{ fontSize: 19 }}>{pauseOption}</Text>
       </Pressable>
     );
 
@@ -295,7 +295,7 @@ export default function DashboardScreen({
         ]}
         onPress={() => handleUpdateClick(campaign, previewOption)}
       >
-        <Text style={{fontSize:19}}>{previewOption}</Text>
+        <Text style={{ fontSize: 19 }}>{previewOption}</Text>
       </Pressable>
     );
 
@@ -361,12 +361,14 @@ function ReturnImage({ campaign }: returnImageProps) {
 const styles = StyleSheet.create({
   container: {
     paddingTop: '8%',
+    flex: 1
   },
   main: {
     backgroundColor: '#FFF',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 24,
+    flex: 1,
     paddingTop: 24,
   },
   title: {
@@ -410,14 +412,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-      button: {
+  button: {
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 4,
-    color:'gray',
-    },
+    color: 'gray',
+  },
   campaignTypeText: {
     color: theme.colors.blue,
   },
@@ -430,5 +432,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
 
     backgroundColor: '#55BB70',
+  },
+  pagination: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
 });
