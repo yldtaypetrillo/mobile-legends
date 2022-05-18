@@ -19,24 +19,27 @@ export default function DashboardScreen({
   const [pageNumber, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [campaignState, setCampaignState] = useState('');
+  const [campaignUpdateStatus, setCampaignUpdateStatus] = useState('');
+
   const [selectedCampaign, setSelectedCampaign] = useState<
     CampaignConfiguration | undefined
   >(undefined);
   const refRBSheet = useRef();
 
   // TODO: remove mocked Token
-  // const { token } = useAuth();
+   const { token } = useAuth();
 
-  const token = 'mocked!';
+  //const token = 'mocked!';
 
   useEffect(() => {
     onPressTouch();
     if (token) {
+        setCampaignUpdateStatus('')
       fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
         (campaigns) => setCampaigns(campaigns),
-      );
+      );    
     }
-  }, [pageNumber, searchTerm, campaignState]);
+  }, [pageNumber, searchTerm, campaignState,campaignUpdateStatus]);
 
   const clickedNextPageButton = () => {
     if (
@@ -67,9 +70,6 @@ export default function DashboardScreen({
   };
 
   const handleUpdateClick = (campaign: Campaign, option: string) => {
-    refRBSheet.current.close()
-
-    // TODO: Update state on click
 
     if(campaign.testing_mode && option == "Launch"){
       updateCampaign(campaign, 'stop_testing_mode');
@@ -77,15 +77,15 @@ export default function DashboardScreen({
     switch (option) {
       case "Launch":
         updateCampaign(campaign, 'apply_revision');
-        return;
+        break;
       case "Pause":
         updateCampaign(campaign, 'pause');
-        return;
+        break;
       case "Preview Mode":
         updateCampaign(campaign, 'start_testing_mode');
-      return;
+      break;
     }
-
+    refRBSheet.current.close()
   }
   };
 
@@ -102,7 +102,7 @@ export default function DashboardScreen({
     )
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
+        setCampaignUpdateStatus('updated');
       })
       .catch((err) => console.error(err));
   };
