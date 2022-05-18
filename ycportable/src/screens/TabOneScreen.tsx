@@ -20,8 +20,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       `https://viserion.yieldify-dev.com/v2/organizations/1/websites/1/campaigns?page=${pageNumber}&per_page=15&order[name]=asc${searchTerm}`,
       {
         headers: new Headers({
-          // Authorization: `Bearer ${token}`,
-          Authorization: `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1rUkRNVFk0UTBZd1FqSTROa1F3T1RrMFJUTkNORU5FTnpRMk1EY3hOVEl5UVRORlJFUXpNZyJ9.eyJodHRwczovL2F1dGgueWllbGRpZnkuY29tL3VzZXJEYXRhIjp7ImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJBZG1pblVzZXIiXX0sImlzcyI6Imh0dHBzOi8veWllbGRpZnktZGV2LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHwxMDA3MTAiLCJhdWQiOlsieWNwIiwiaHR0cHM6Ly95aWVsZGlmeS1kZXYuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY1Mjg4MTQ4OCwiZXhwIjoxNjUyODgzMjg4LCJhenAiOiJ4REZ1WklNM1FGRHEzOUNPcm82RndpMlBIQzVhejRkciIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwgb2ZmbGluZV9hY2Nlc3MiLCJwZXJtaXNzaW9ucyI6W119.Cm-y8Wahp1_xqVUAsCtJnNo48ZJBfQfVc0sQqPbLVnktRWpmM2Lbpd7VOlF4h6deed6rm31-z96Nvweb7COYoSE88k8X67l1Cq0EHzW7Vol1Emzgu4A-5eYH3BzmbeNqX6nlEBy4tyXoqrcbuXOsvXY8ItliaOvQxon4BiF9FZzPKZKPHYxUE4wdc_-HnIpdXxr7smYQISPpiMKU5wI4IupMizcijqsAq8NaJ91x5G8eGv7qDRe8SDTphldudO91EL1mjKRfv4OMMvjqig9ap5ISOUUgCJwDkBY7LEF-wU71CysZ01X75QzbFSGSZ6KO6va-aaQEqILTYBZrcTNfKQ`,
+          Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         }),
       }
@@ -59,15 +58,6 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
   function returnSearchTerm(changedText: string) {
     return changedText != '' ? setSearchTerm(`&search[filter]=${changedText}`) : setSearchTerm('')
   }
-
-  // function experimentType(campaign:CampaignConfiguration) {
-  //   const { experiments } = campaign;
-  //   if (isMissing(experiments) || isEmpty(experiments)) {
-  //     return ['a'];
-  //   }
-
-  //   return getActiveVariantsFromExperiment(experiments[0]);
-  // }
   const scrollRef = useRef<ScrollView>(null)
   return (
     <View style={styles.container}>
