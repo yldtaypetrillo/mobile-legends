@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
+import {
+  Button,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { Campaign, CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';
 import { CampaignImageComponent } from '../components/CampaignImageComponent';
@@ -12,6 +19,8 @@ import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
 import { fetchCampaigns } from '../utils/fetchCampaigns';
 import RBSheet from 'react-native-raw-bottom-sheet';
+import { theme } from '../theme';
+import { CaretDown, Eye } from 'phosphor-react-native';
 
 export default function DashboardScreen({
   navigation,
@@ -20,24 +29,26 @@ export default function DashboardScreen({
   const [pageNumber, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [campaignState, setCampaignState] = useState('');
+  const [campaignUpdateStatus, setCampaignUpdateStatus] = useState('');
+
   const [selectedCampaign, setSelectedCampaign] = useState<
     CampaignConfiguration | undefined
   >(undefined);
   const refRBSheet = useRef();
 
   // TODO: remove mocked Token
-  // const { token } = useAuth();
-
-  const token = 'mocked!';
+  const { token } = useAuth();
+  // const token = 'mocked!';
 
   useEffect(() => {
     onPressTouch();
     if (token) {
+      setCampaignUpdateStatus('');
       fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
         (campaigns) => setCampaigns(campaigns),
       );
     }
-  }, [pageNumber, searchTerm, campaignState]);
+  }, [pageNumber, searchTerm, campaignState, campaignUpdateStatus]);
 
   const clickedNextPageButton = () => {
     if (
@@ -68,26 +79,22 @@ export default function DashboardScreen({
   };
 
   const handleUpdateClick = (campaign: Campaign, option: string) => {
-    refRBSheet.current.close()
-
-    // TODO: Update state on click
-
-    if(campaign.testing_mode && option == "Launch"){
+    if (campaign.testing_mode && option == 'Launch') {
       updateCampaign(campaign, 'stop_testing_mode');
-    }else{
-    switch (option) {
-      case "Launch":
-        updateCampaign(campaign, 'apply_revision');
-        return;
-      case "Pause":
-        updateCampaign(campaign, 'pause');
-        return;
-      case "Preview Mode":
-        updateCampaign(campaign, 'start_testing_mode');
-      return;
+    } else {
+      switch (option) {
+        case 'Launch':
+          updateCampaign(campaign, 'apply_revision');
+          break;
+        case 'Pause':
+          updateCampaign(campaign, 'pause');
+          break;
+        case 'Preview Mode':
+          updateCampaign(campaign, 'start_testing_mode');
+          break;
+      }
+      refRBSheet.current.close();
     }
-
-  }
   };
 
   const updateCampaign = (campaign: Campaign, action: string) => {
@@ -96,37 +103,35 @@ export default function DashboardScreen({
       {
         headers: new Headers({
           Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         }),
-        method: "POST",
-      }
+        method: 'POST',
+      },
     )
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
+        setCampaignUpdateStatus('updated');
       })
       .catch((err) => console.error(err));
   };
 
-
-
   const formatCampaignState = (campaign: Campaign): string => {
     const campaignState = campaign.state;
 
-    if (campaign.testing_mode && campaignState === "live") {
-      return "Preview Mode";
+    if (campaign.testing_mode && campaignState === 'live') {
+      return 'Preview Mode';
     }
 
     if (isCampaignExpired(campaign)) {
-      return "Campaign Expired";
+      return 'Campaign Expired';
     }
 
-    if (campaignState === "paused") {
-      return "Off";
+    if (campaignState === 'paused') {
+      return 'Off';
     }
 
-    if (campaign.is_scheduled && campaign.state !== "live") {
-      return "Scheduled";
+    if (campaign.is_scheduled && campaign.state !== 'live') {
+      return 'Scheduled';
     }
 
     return campaignState;
@@ -155,34 +160,56 @@ export default function DashboardScreen({
           {campaigns.map((campaign) => {
             return (
               <View key={campaign.id}>
-                <Text>{campaign.name}</Text>
-                <ReturnImage campaign={campaign}></ReturnImage>
-                <CampaignButton campaign={campaign} />
-                {/* <Button
-                title={formatCampaignState(campaign)}
-                onPress={() => {
-                  setSelectedCampaign(campaign);
-                  refRBSheet.current.open();
-                }}
-              ></Button> */}
-              <RBSheet
-                ref={refRBSheet}
-                closeOnDragDown={true}
-                closeOnPressMask={true}
-                customStyles={{
-                  wrapper: {
-                    backgroundColor: "transparent",
-                  },
-                  draggableIcon: {
-                    backgroundColor: "#000",
-                  },
-                }}
-              >
-                  <Text>
-                    {selectedCampaign?.name} {selectedCampaign?.id}
-                  </Text>
-                  {<UpdateOptions campaign={selectedCampaign!} />}
-              </RBSheet>
+                <View key={campaign.id}>
+                  <View key={campaign.id} style={styles.campaignInfoContainer}>
+                    <View style={styles.campaignTextsContainer}>
+                      <View style={styles.campaignTitleContainer}>
+                        <Text style={styles.campaignTitle}>
+                          {campaign.name}
+                        </Text>
+                        <Text style={styles.campaignId}>#{campaign.id}</Text>
+                      </View>
+                      <View style={styles.campaignType}>
+                        <Text style={styles.campaignTypeText}>
+                          Multi Variant
+                        </Text>
+                      </View>
+                    </View>
+                    <ReturnImage campaign={campaign}></ReturnImage>
+                  </View>
+                  <TouchableOpacity
+                    onPress={() => {
+                      setSelectedCampaign(campaign);
+                      refRBSheet.current.open();
+                    }}
+                    style={styles.changeCampaignStateButton}
+                  >
+                    <Eye size={16} color={theme.colors.white} weight='thin' />
+                    <Text style={{ color: theme.colors.white }}>
+                      {formatCampaignState(campaign)}
+                    </Text>
+                    <CaretDown size={16} color={theme.colors.white} />
+                  </TouchableOpacity>
+                  <RBSheet
+                    ref={refRBSheet}
+                    closeOnDragDown={true}
+                    closeOnPressMask={true}
+                    customStyles={{
+                      wrapper: {
+                        backgroundColor: 'transparent',
+                      },
+                      draggableIcon: {
+                        backgroundColor: '#000',
+                      },
+                    }}
+                  >
+                    <Text>
+                      {selectedCampaign?.name} {selectedCampaign?.id}
+                    </Text>
+                    {<UpdateOptions campaign={selectedCampaign!} />}
+                  </RBSheet>
+                </View>
+                <View style={styles.separator} />
               </View>
             );
           })}
@@ -201,20 +228,16 @@ export default function DashboardScreen({
     </View>
   );
 
-
-
-
-
   interface updateOptionsProps {
     campaign: CampaignConfiguration;
   }
 
   function UpdateOptions({ campaign }: updateOptionsProps) {
-    const startOption: string = "Launch";
+    const startOption: string = 'Launch';
 
-    const pauseOption: string = "Pause";
+    const pauseOption: string = 'Pause';
 
-    const previewOption: string = "Preview Mode";
+    const previewOption: string = 'Preview Mode';
 
     if (
       campaign.end_at !== undefined &&
@@ -224,21 +247,29 @@ export default function DashboardScreen({
       return <></>;
     }
 
-    if (campaign.state === "paused") {
-
+    if (campaign.state === 'paused') {
       if (isEmailCampaign(campaign)) {
         // You can't set email standalone campaigns to preview mode
         return (
           <>
-            <Button title={startOption} onPress={()=>handleUpdateClick(campaign,startOption)}></Button>
+            <Button
+              title={startOption}
+              onPress={() => handleUpdateClick(campaign, startOption)}
+            ></Button>
           </>
         );
       }
 
       return (
         <>
-          <Button title={startOption} onPress={()=>handleUpdateClick(campaign,startOption)}></Button>
-          <Button title={previewOption} onPress={()=>handleUpdateClick(campaign,previewOption)}></Button>
+          <Button
+            title={startOption}
+            onPress={() => handleUpdateClick(campaign, startOption)}
+          ></Button>
+          <Button
+            title={previewOption}
+            onPress={() => handleUpdateClick(campaign, previewOption)}
+          ></Button>
         </>
       );
     }
@@ -246,25 +277,41 @@ export default function DashboardScreen({
     if ((campaign as Campaign).testing_mode) {
       return (
         <>
-          <Button title={startOption} onPress={()=>handleUpdateClick(campaign,startOption)}></Button>
-          <Button title={pauseOption} onPress={()=>handleUpdateClick(campaign,pauseOption)}></Button>
+          <Button
+            title={startOption}
+            onPress={() => handleUpdateClick(campaign, startOption)}
+          ></Button>
+          <Button
+            title={pauseOption}
+            onPress={() => handleUpdateClick(campaign, pauseOption)}
+          ></Button>
         </>
       );
     }
 
     if (isEmailCampaign(campaign)) {
       // You can't set email standalone campaigns to preview mode
-      return (<Button title={pauseOption} onPress={()=>handleUpdateClick(campaign,pauseOption)}></Button>);
+      return (
+        <Button
+          title={pauseOption}
+          onPress={() => handleUpdateClick(campaign, pauseOption)}
+        ></Button>
+      );
     }
 
     return (
       <>
-        <Button title={pauseOption} onPress={()=>handleUpdateClick(campaign,pauseOption)}></Button>
-        <Button title={previewOption} onPress={()=>handleUpdateClick(campaign,previewOption)}></Button>
+        <Button
+          title={pauseOption}
+          onPress={() => handleUpdateClick(campaign, pauseOption)}
+        ></Button>
+        <Button
+          title={previewOption}
+          onPress={() => handleUpdateClick(campaign, previewOption)}
+        ></Button>
       </>
     );
   }
-
 }
 
 function ReturnImage({ campaign }: returnImageProps) {
@@ -275,8 +322,6 @@ function ReturnImage({ campaign }: returnImageProps) {
   );
 }
 
-
-
 const styles = StyleSheet.create({
   container: {
     paddingTop: '8%',
@@ -285,8 +330,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '5%',
-
     borderRadius: 24,
   },
   title: {
@@ -299,7 +342,49 @@ const styles = StyleSheet.create({
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    backgroundColor: theme.colors.lightgrey,
+  },
+  campaignInfoContainer: {
+    flexDirection: 'row',
+    alignContent: 'center',
+  },
+  campaignTextsContainer: {
+    marginBottom: 19,
+    justifyContent: 'space-around',
+    width: 162,
+    height: 84,
+  },
+  campaignTitle: {
+    fontSize: 16,
+    color: theme.colors.black,
+  },
+  campaignId: {
+    fontSize: 12,
+    color: theme.colors.grey,
+  },
+  campaignTitleContainer: {},
+  campaignType: {
+    backgroundColor: theme.colors.lightblue,
+    borderRadius: 100,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+
+    maxWidth: '80%',
+
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  campaignTypeText: {
+    color: theme.colors.blue,
+  },
+  changeCampaignStateButton: {
+    flexDirection: 'row',
+    alignContent: 'flex-end',
+    justifyContent: 'space-between',
+    width: 312,
+    borderRadius: 100,
+    paddingHorizontal: 16,
+
+    backgroundColor: '#55BB70',
   },
 });
-
