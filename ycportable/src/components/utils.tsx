@@ -1,4 +1,4 @@
-import { CampaignConfiguration, EmailCampaign } from '../..'
+import { CampaignConfiguration, EmailCampaign, Experiment, Split, Variant } from '../..'
 
 const EMAIL_CAMPAIGN_TYPE = 'EmailCampaign';
 
@@ -9,3 +9,10 @@ export const isEmailCampaign = (
 export interface returnImageProps {
   campaign: CampaignConfiguration;
 };
+
+export interface pageButtonProps {
+  children: string,
+  onPress: Function;
+  title: string;
+
+}

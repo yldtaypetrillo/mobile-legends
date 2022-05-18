@@ -10,6 +10,7 @@ import { Header } from '../components/Header';
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
 import { fetchCampaigns } from '../utils/fetchCampaigns';
+import { PageChangeButtonComponent } from '../components/PageChangeButton';
 import RBSheet from 'react-native-raw-bottom-sheet';
 
 export default function DashboardScreen({
@@ -30,7 +31,6 @@ export default function DashboardScreen({
   const token = 'mocked!';
 
   useEffect(() => {
-    onPressTouch();
     if (token) {
       fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
         (campaigns) => setCampaigns(campaigns),
@@ -71,22 +71,22 @@ export default function DashboardScreen({
 
     // TODO: Update state on click
 
-    if(campaign.testing_mode && option == "Launch"){
+    if (campaign.testing_mode && option == "Launch") {
       updateCampaign(campaign, 'stop_testing_mode');
-    }else{
-    switch (option) {
-      case "Launch":
-        updateCampaign(campaign, 'apply_revision');
-        return;
-      case "Pause":
-        updateCampaign(campaign, 'pause');
-        return;
-      case "Preview Mode":
-        updateCampaign(campaign, 'start_testing_mode');
-      return;
-    }
+    } else {
+      switch (option) {
+        case "Launch":
+          updateCampaign(campaign, 'apply_revision');
+          return;
+        case "Pause":
+          updateCampaign(campaign, 'pause');
+          return;
+        case "Preview Mode":
+          updateCampaign(campaign, 'start_testing_mode');
+          return;
+      }
 
-  }
+    }
   };
 
   const updateCampaign = (campaign: Campaign, action: string) => {
@@ -153,47 +153,53 @@ export default function DashboardScreen({
         <ScrollView ref={scrollRef}>
           {campaigns.map((campaign) => {
             return (
-              <View key={campaign.id}>
-                <Text>{campaign.name}</Text>
+              <View key={campaign.id} style={{ flexDirection: "row", marginBottom: 50 }}>
+                <View style={{ flexDirection: "column", marginLeft: 10, marginRight: 10 }}>
+                  <Text style={{ flex: 2, fontSize: 20 }}>{campaign.name}</Text>
+                  <Text style={{ flex: 2, marginBottom: 10 }}>{`#${campaign.id}`}</Text>
+                </View>
                 <ReturnImage campaign={campaign}></ReturnImage>
                 <Button
-                title={formatCampaignState(campaign)}
-                onPress={() => {
-                  setSelectedCampaign(campaign);
-                  refRBSheet.current.open();
-                }}
-              ></Button>
-              <RBSheet
-                ref={refRBSheet}
-                closeOnDragDown={true}
-                closeOnPressMask={true}
-                customStyles={{
-                  wrapper: {
-                    backgroundColor: "transparent",
-                  },
-                  draggableIcon: {
-                    backgroundColor: "#000",
-                  },
-                }}
-              >
+                  title={formatCampaignState(campaign)}
+                  onPress={() => {
+                    setSelectedCampaign(campaign);
+                    refRBSheet.current.open();
+                  }}
+                ></Button>
+                <RBSheet
+                  ref={refRBSheet}
+                  closeOnDragDown={true}
+                  closeOnPressMask={true}
+                  customStyles={{
+                    wrapper: {
+                      backgroundColor: "transparent",
+                    },
+                    draggableIcon: {
+                      backgroundColor: "#000",
+                    },
+                  }}
+                >
                   <Text>
                     {selectedCampaign?.name} {selectedCampaign?.id}
                   </Text>
                   {<UpdateOptions campaign={selectedCampaign!} />}
-              </RBSheet>
+                </RBSheet>
               </View>
             );
           })}
 
-          <Button onPress={clickedPreviousPageButton} title='PreviousPage'>
+          <PageChangeButtonComponent onPress={clickedPreviousPageButton}
+            title='PreviousPage'>
             Previous Page
-          </Button>
+          </PageChangeButtonComponent>
 
           <Text>{pageNumber}</Text>
 
-          <Button onPress={clickedNextPageButton} title='NextPage'>
+          <PageChangeButtonComponent
+            onPress={clickedNextPageButton}
+            title='NextPage'>
             Next Page
-          </Button>
+          </PageChangeButtonComponent>
         </ScrollView>
       </View>
     </View>
@@ -228,15 +234,15 @@ export default function DashboardScreen({
         // You can't set email standalone campaigns to preview mode
         return (
           <>
-            <Button title={startOption} onPress={()=>handleUpdateClick(campaign,startOption)}></Button>
+            <Button title={startOption} onPress={() => handleUpdateClick(campaign, startOption)}></Button>
           </>
         );
       }
 
       return (
         <>
-          <Button title={startOption} onPress={()=>handleUpdateClick(campaign,startOption)}></Button>
-          <Button title={previewOption} onPress={()=>handleUpdateClick(campaign,previewOption)}></Button>
+          <Button title={startOption} onPress={() => handleUpdateClick(campaign, startOption)}></Button>
+          <Button title={previewOption} onPress={() => handleUpdateClick(campaign, previewOption)}></Button>
         </>
       );
     }
@@ -244,21 +250,21 @@ export default function DashboardScreen({
     if ((campaign as Campaign).testing_mode) {
       return (
         <>
-          <Button title={startOption} onPress={()=>handleUpdateClick(campaign,startOption)}></Button>
-          <Button title={pauseOption} onPress={()=>handleUpdateClick(campaign,pauseOption)}></Button>
+          <Button title={startOption} onPress={() => handleUpdateClick(campaign, startOption)}></Button>
+          <Button title={pauseOption} onPress={() => handleUpdateClick(campaign, pauseOption)}></Button>
         </>
       );
     }
 
     if (isEmailCampaign(campaign)) {
       // You can't set email standalone campaigns to preview mode
-      return (<Button title={pauseOption} onPress={()=>handleUpdateClick(campaign,pauseOption)}></Button>);
+      return (<Button title={pauseOption} onPress={() => handleUpdateClick(campaign, pauseOption)}></Button>);
     }
 
     return (
       <>
-        <Button title={pauseOption} onPress={()=>handleUpdateClick(campaign,pauseOption)}></Button>
-        <Button title={previewOption} onPress={()=>handleUpdateClick(campaign,previewOption)}></Button>
+        <Button title={pauseOption} onPress={() => handleUpdateClick(campaign, pauseOption)}></Button>
+        <Button title={previewOption} onPress={() => handleUpdateClick(campaign, previewOption)}></Button>
       </>
     );
   }

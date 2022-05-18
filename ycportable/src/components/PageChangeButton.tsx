@@ -1,11 +1,11 @@
-import React = require('react');
 import { Button } from 'react-native';
+import { pageButtonProps } from './utils';
 
-export function PageChangeButtonComponent(handler: Function, title: string) {
+export function PageChangeButtonComponent({ onPress, title }: pageButtonProps) {
     return (
         <Button
-            onPress={() => handler}
-            title='Next Page'
+            onPress={onPress}
+            title={`${title}`}
         />
     )
 } 
