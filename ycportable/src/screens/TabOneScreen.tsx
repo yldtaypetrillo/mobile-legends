@@ -1,17 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import React = require('react');
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 import { CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';
 import { CampaignImageComponent } from '../components/CampaignImageComponent';
 import { EmailCampaignImageComponent } from '../components/EmailCampaignImageComponent';
 import { Input } from '../components/Input';
-import { returnImageProps, isEmailCampaign } from '../components/utils';
-
+import { isEmailCampaign, returnImageProps } from '../components/utils';
+import { useAuth } from '../hooks/useAuth';
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   const [pageNumber, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('')
   const [state, setState] = useState<CampaignConfiguration[]>([])
+  const { token } = useAuth();
 
   useEffect(() => {
     onPressTouch
@@ -19,13 +21,13 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       `https://viserion.yieldify-dev.com/v2/organizations/1/websites/1/campaigns?page=${pageNumber}&per_page=15&order[name]=asc${searchTerm}`,
       {
         headers: new Headers({
-          'Authorization': 'Bearer ',
-          'Content-Type': 'application/json'
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
         }),
       }
     )
-      .then(response => response.json())
-      .then(json => {
+      .then((response) => response.json())
+      .then((json) => {
         setState(json); // access json.body here
       }).catch((err) => alert(err))
   }, [pageNumber, searchTerm]);
@@ -83,15 +85,16 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
           Next Page
         </Button>
       </ScrollView>
-    </View>
+    </View >
   );
 }
 
 function ReturnImage({ campaign }: returnImageProps) {
-  return isEmailCampaign(campaign) ?
+  return isEmailCampaign(campaign) ? (
     <EmailCampaignImageComponent campaign={campaign} />
-    :
+  ) : (
     <CampaignImageComponent campaign={campaign} />
+  );
 }
 
 const styles = StyleSheet.create({
@@ -110,4 +113,3 @@ const styles = StyleSheet.create({
     width: '80%',
   },
 });
-
