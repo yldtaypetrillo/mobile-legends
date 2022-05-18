@@ -114,33 +114,6 @@ export default function DashboardScreen({
       .catch((err) => console.error(err));
   };
 
-  const formatCampaignState = (campaign: Campaign): string => {
-    const campaignState = campaign.state;
-
-    if (campaign.testing_mode && campaignState === 'live') {
-      return 'Preview Mode';
-    }
-
-    if (isCampaignExpired(campaign)) {
-      return 'Campaign Expired';
-    }
-
-    if (campaignState === 'paused') {
-      return 'Off';
-    }
-
-    if (campaign.is_scheduled && campaign.state !== 'live') {
-      return 'Scheduled';
-    }
-
-    return campaignState;
-  };
-
-  const isCampaignExpired = (campaign: Campaign): boolean =>
-    campaign.end_at !== undefined &&
-    campaign.end_at !== null &&
-    new Date(campaign.end_at) < new Date();
-
   const scrollRef = useRef<ScrollView>(null);
 
   return (
@@ -183,19 +156,7 @@ export default function DashboardScreen({
                       refRBSheet.current.open();
                     }}
                   />
-                  {/* <TouchableOpacity
-                    onPress={() => {
-                      setSelectedCampaign(campaign);
-                      refRBSheet.current.open();
-                    }}
-                    style={styles.changeCampaignStateButton}
-                  >
-                    <Eye size={16} color={theme.colors.white} weight='thin' />
-                    <Text style={{ color: theme.colors.white }}>
-                      {formatCampaignState(campaign)}
-                    </Text>
-                    <CaretDown size={16} color={theme.colors.white} />
-                  </TouchableOpacity> */}
+
                   <RBSheet
                     ref={refRBSheet}
                     closeOnDragDown={true}
