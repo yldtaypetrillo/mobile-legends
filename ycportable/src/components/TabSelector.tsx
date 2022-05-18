@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import {
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  StyleSheet,
+  View,
+} from 'react-native';
 import { theme } from '../theme';
 
 interface TabSelectorProps {
@@ -43,37 +49,39 @@ export function TabSelector({ onSelect }: TabSelectorProps) {
   }
 
   return (
-    <ScrollView
-      horizontal={true}
-      style={styles.container}
-      contentContainerStyle={{
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingVertical: 8,
-      }}
-    >
-      {filters.map((filter) => {
-        return (
-          <TouchableOpacity
-            key={filter.id}
-            onPress={() => handleSelectTab(filter)}
-            style={[
-              styles.tabSelector,
-              selectedFilter === filter.id && styles.selectedTab,
-            ]}
-          >
-            <Text
+    <View>
+      <ScrollView
+        horizontal={true}
+        style={styles.container}
+        contentContainerStyle={{
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingVertical: 8,
+        }}
+      >
+        {filters.map((filter) => {
+          return (
+            <TouchableOpacity
+              key={filter.id}
+              onPress={() => handleSelectTab(filter)}
               style={[
-                styles.text,
-                selectedFilter === filter.id && { color: theme.colors.white },
+                styles.tabSelector,
+                selectedFilter === filter.id && styles.selectedTab,
               ]}
             >
-              {filter.name}
-            </Text>
-          </TouchableOpacity>
-        );
-      })}
-    </ScrollView>
+              <Text
+                style={[
+                  styles.text,
+                  selectedFilter === filter.id && { color: theme.colors.white },
+                ]}
+              >
+                {filter.name}
+              </Text>
+            </TouchableOpacity>
+          );
+        })}
+      </ScrollView>
+    </View>
   );
 }
 
@@ -81,6 +89,7 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: 8,
     maxHeight: 50,
+    maxWidth: '93%',
   },
   tabSelector: {
     fontSize: 14,
