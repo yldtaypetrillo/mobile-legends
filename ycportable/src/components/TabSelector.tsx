@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.grey,
 
     marginLeft: 8,
+    height: 25,
   },
   text: {
     color: theme.colors.grey,
