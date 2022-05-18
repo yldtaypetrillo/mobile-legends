@@ -22,15 +22,18 @@ export default function DashboardScreen({
   const [selectedCampaign, setSelectedCampaign] = useState<
     CampaignConfiguration | undefined
   >(undefined);
-  const { token } = useAuth();
   const refRBSheet = useRef();
 
+  // TODO: remove mocked Token
+  // const { token } = useAuth();
+
+  const token = 'mocked!';
 
   useEffect(() => {
     onPressTouch();
     if (token) {
       fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
-        (campaigns) => setCampaigns(campaigns)
+        (campaigns) => setCampaigns(campaigns),
       );
     }
   }, [pageNumber, searchTerm, campaignState]);
@@ -137,7 +140,7 @@ export default function DashboardScreen({
 
   return (
     <View style={styles.container}>
-      <Header headerText="Dashboard" />
+      <Header headerText='Dashboard' />
       <View style={styles.main}>
         <TabSelector onSelect={setCampaignState} />
         <View style={styles.input}>
@@ -182,13 +185,13 @@ export default function DashboardScreen({
             );
           })}
 
-          <Button onPress={clickedPreviousPageButton} title="PreviousPage">
+          <Button onPress={clickedPreviousPageButton} title='PreviousPage'>
             Previous Page
           </Button>
 
           <Text>{pageNumber}</Text>
 
-          <Button onPress={clickedNextPageButton} title="NextPage">
+          <Button onPress={clickedNextPageButton} title='NextPage'>
             Next Page
           </Button>
         </ScrollView>

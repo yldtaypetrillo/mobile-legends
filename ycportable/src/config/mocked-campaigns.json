@@ -1,0 +1,4941 @@
+[
+  {
+    "id": 220512011,
+    "lock_version": 2,
+    "created_at": "2022-05-17T08:45:06.778Z",
+    "updated_at": "2022-05-17T08:45:07.574Z",
+    "deleted_at": null,
+    "name": "Blank single overlay",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "revision": {
+      "id": 2,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "Opening Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify-dev.com/organisation/1/website/1/campaign/220512011/previews/1652777106989/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-TdGQyB",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify-dev.com/organisation/1/website/1/campaign/220512011/previews/1652777106989/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-KOSLCu",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2022-05-17T08:44:59.485Z",
+      "deleted_at": null,
+      "updated_at": "2022-05-17T08:44:59.485Z",
+      "campaign_id": 220512011,
+      "lock_version": 0
+    },
+    "start_at": "2022-05-17T08:44:59.485Z",
+    "template_id": 101,
+    "testing_mode": false,
+    "capping_behaviour": "Format",
+    "website_id": 1
+  },
+  {
+    "id": 220512008,
+    "lock_version": 2,
+    "created_at": "2022-05-16T15:18:48.748Z",
+    "updated_at": "2022-05-16T15:18:49.245Z",
+    "deleted_at": null,
+    "name": "Blank single overlay",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "revision": {
+      "id": 2,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "Opening Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify-dev.com/organisation/1/website/1/campaign/220512008/previews/1652714328992/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-KQtUx3",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify-dev.com/organisation/1/website/1/campaign/220512008/previews/1652714328992/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-JItsPy",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2022-05-16T15:18:42.591Z",
+      "deleted_at": null,
+      "updated_at": "2022-05-16T15:18:42.591Z",
+      "campaign_id": 220512008,
+      "lock_version": 0
+    },
+    "start_at": "2022-05-16T15:18:42.591Z",
+    "template_id": 101,
+    "testing_mode": false,
+    "capping_behaviour": "Format",
+    "website_id": 1
+  },
+  {
+    "id": 191667,
+    "lock_version": 8,
+    "created_at": "2022-04-26T08:29:08.076Z",
+    "updated_at": "2022-04-29T13:23:15.405Z",
+    "deleted_at": null,
+    "name": "Tristan Test",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "category": "LeadCapture",
+    "revision": {
+      "id": 8,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "Opening Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "closingGroups": [],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/191667/previews/1650961871202/desktop/0/preview.png",
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-W13QBQ",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,0)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-jWphGp",
+                    "text": "Main header \nmessage\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 77,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 555,
+                      "height": 134
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-nTQ4LU",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 242,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 527,
+                      "height": 54
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-K86OvH",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 25,
+                    "position": {
+                      "top": 330,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 260,
+                      "height": 58
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-O0TzZe",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2200,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 425,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 451,
+                      "height": 15
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-4yFBSt",
+                    "type": "custom-close-button",
+                    "shape": "circle",
+                    "zIndex": 3001,
+                    "iconSize": 10,
+                    "position": {
+                      "top": -17,
+                      "left": 783
+                    },
+                    "iconColor": "#fff",
+                    "borderSize": 2,
+                    "dimensions": {
+                      "width": 34,
+                      "height": 34
+                    },
+                    "dropShadow": true,
+                    "borderColor": "#fff",
+                    "borderRadius": {
+                      "unit": "%",
+                      "topLeft": 50,
+                      "topRight": 50,
+                      "bottomLeft": 50,
+                      "bottomRight": 50
+                    },
+                    "iconThickness": 2,
+                    "backgroundColor": "#f00"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/191667/previews/1650961871202/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-8qMN0Y",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-i6ZCvR",
+                    "text": "Main header\nmessage\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 85,
+                      "left": 73
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 354,
+                      "height": 128
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-G_s5vS",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 255,
+                      "left": 77.5
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 345,
+                      "height": 47
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-9h10ie",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 25,
+                    "position": {
+                      "top": 345,
+                      "left": 90
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 321,
+                      "height": 70
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-OrBFFx",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2200,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 446,
+                      "left": 100
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2022-04-26T08:29:08.071Z",
+      "deleted_at": null,
+      "updated_at": "2022-04-26T08:29:08.071Z",
+      "campaign_id": 191667,
+      "lock_version": 0
+    },
+    "start_at": "2022-04-26T08:29:08.071Z",
+    "template_id": 68,
+    "testing_mode": false,
+    "campaign_type": "Core",
+    "count_as_credit": false,
+    "capping_behaviour": "Format",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 187364,
+    "lock_version": 6,
+    "created_at": "2022-03-03T11:59:20.012Z",
+    "updated_at": "2022-04-09T08:56:50.291Z",
+    "deleted_at": null,
+    "name": "Single overlay",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "revision": {
+      "id": 6,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "Opening Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "closingGroups": [],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/187364/previews/1646841503154/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-BpF-qH",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-Z12KRG",
+                    "text": "Main header \nmessage\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 77,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 555,
+                      "height": 134
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-icRDew",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 242,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 527,
+                      "height": 54
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-e-3jJq",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 25,
+                    "position": {
+                      "top": 330,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 260,
+                      "height": 58
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-_ry6Xh",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2200,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 425,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 451,
+                      "height": 15
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/187364/previews/1646841503154/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-LhlQOC",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-fIYIEk",
+                    "text": "Main header\nmessage\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 85,
+                      "left": 73
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 354,
+                      "height": 128
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-arsz85",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 255,
+                      "left": 77.5
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 345,
+                      "height": 47
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-IqP237",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 25,
+                    "position": {
+                      "top": 345,
+                      "left": 90
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 321,
+                      "height": 70
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-tTpkcT",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2200,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 446,
+                      "left": 100
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2022-03-03T11:59:19.803Z",
+      "deleted_at": null,
+      "updated_at": "2022-03-03T11:59:19.803Z",
+      "campaign_id": 187364,
+      "lock_version": 0
+    },
+    "start_at": "2022-04-09T08:56:30.019Z",
+    "template_id": 68,
+    "testing_mode": false,
+    "capping_behaviour": "Format",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 188686,
+    "lock_version": 12,
+    "created_at": "2022-03-18T14:28:24.492Z",
+    "updated_at": "2022-04-09T08:56:48.740Z",
+    "deleted_at": null,
+    "name": "Single overlay",
+    "type": "SingleOverlay",
+    "state": "live",
+    "end_at": null,
+    "category": "Other",
+    "revision": {
+      "id": 12,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "Opening Group 1",
+            "targets": {},
+            "triggers": {
+              "timer": {
+                "seconds": 5
+              }
+            }
+          }
+        ],
+        "closingGroups": [],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/188686/previews/1647614155806/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-BQdaM3",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(65,198,191,0)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-TQKUjQ",
+                    "text": "Subheader message ",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 190,
+                      "left": 68
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 613,
+                      "height": 34
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-jZWQS8",
+                    "text": "Tay Test ^^\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 110,
+                      "left": 68
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 518,
+                      "height": 64
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "rgba(255,255,255,0)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-BsLLhs",
+                    "type": "form",
+                    "zIndex": 2200,
+                    "children": [
+                      {
+                        "id": "element-2SwwUr",
+                        "name": "email",
+                        "text": "",
+                        "type": "input",
+                        "color": "#0f0f0f",
+                        "zIndex": 2200,
+                        "fontSize": 16,
+                        "position": {
+                          "top": 247,
+                          "left": 68
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 300,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "initial",
+                        "lineHeight": "1.25",
+                        "borderColor": "rgba(153,153,153,0.5)",
+                        "placeholder": "Enter your email",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#fff",
+                        "validationRules": [
+                          {
+                            "type": "required",
+                            "message": "Email is required."
+                          },
+                          {
+                            "rule": "email",
+                            "type": "default-regex"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "element-Ff8Doh",
+                        "text": "Button",
+                        "type": "cta",
+                        "color": "#fff",
+                        "zIndex": 3000,
+                        "onClick": {
+                          "type": "next",
+                          "countAsClick": true
+                        },
+                        "fontSize": 16,
+                        "position": {
+                          "top": 352,
+                          "left": 68
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 160,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "rgba(255,255,255,0)",
+                        "borderRadius": {
+                          "unit": "px",
+                          "topLeft": 0,
+                          "topRight": 0,
+                          "bottomLeft": 0,
+                          "bottomRight": 0
+                        },
+                        "textDecoration": "initial",
+                        "backgroundColor": "#07c"
+                      },
+                      {
+                        "id": "element-RnNrky",
+                        "name": "opt-in-checkbox",
+                        "text": "Mandatory opt in wording",
+                        "type": "checkbox",
+                        "color": "#4e4e4e",
+                        "zIndex": 2230,
+                        "fontSize": 12,
+                        "position": {
+                          "top": 294,
+                          "left": 68
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 250,
+                          "height": 21
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "textDecoration": "initial",
+                        "backgroundColor": "transparent",
+                        "backgroundImage": "none",
+                        "validationRules": [
+                          {
+                            "type": "checked",
+                            "message": "Opting in is required"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "element-yG8JA2",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2300,
+                    "fontSize": 12,
+                    "position": {
+                      "top": 405,
+                      "left": 68
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 232,
+                      "height": 15
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              },
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/188686/previews/1647614155806/desktop/1/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-0f1e7r",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(255,255,255,0)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-Ke4Q0x",
+                    "text": "2nd Stage O:",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 1001,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 100,
+                      "left": 50
+                    },
+                    "alignment": "center",
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 400,
+                      "height": 100
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "transparent",
+                    "textDecoration": "initial",
+                    "backgroundColor": "transparent",
+                    "backgroundImage": "none"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/188686/previews/1647614155806/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-x7dcPY",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#41c6bf",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-wJXuaC",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 190,
+                      "left": 11
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 478,
+                      "height": 46
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-YCQXwD",
+                    "text": "Header message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 110,
+                      "left": 11
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 478,
+                      "height": 57
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-xz86GV",
+                    "type": "form",
+                    "zIndex": 2200,
+                    "children": [
+                      {
+                        "id": "element-Bm1kEF",
+                        "name": "email",
+                        "text": "",
+                        "type": "input",
+                        "color": "rgba(29,28,28,0.91)",
+                        "zIndex": 2200,
+                        "fontSize": 16,
+                        "position": {
+                          "top": 247,
+                          "left": 100
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 300,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "initial",
+                        "lineHeight": "1.25",
+                        "borderColor": "rgba(153,153,153,0.5)",
+                        "placeholder": "Enter your email",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#fff",
+                        "validationRules": [
+                          {
+                            "type": "required",
+                            "message": "Email is required."
+                          },
+                          {
+                            "rule": "email",
+                            "type": "default-regex"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "element-iagbmW",
+                        "text": "Button",
+                        "type": "cta",
+                        "color": "#fff",
+                        "zIndex": 3000,
+                        "onClick": {
+                          "type": "dismiss",
+                          "countAsClick": true
+                        },
+                        "fontSize": 16,
+                        "position": {
+                          "top": 367,
+                          "left": 170
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 160,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "#ffffff",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#07c"
+                      },
+                      {
+                        "id": "element-qHcZYc",
+                        "name": "opt-in-checkbox",
+                        "text": "Mandatory opt in wording",
+                        "type": "checkbox",
+                        "color": "#4e4e4e",
+                        "zIndex": 2230,
+                        "fontSize": 12,
+                        "position": {
+                          "top": 300,
+                          "left": 99
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 174,
+                          "height": 21
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "textDecoration": "initial",
+                        "backgroundColor": "transparent",
+                        "backgroundImage": "none",
+                        "validationRules": [
+                          {
+                            "type": "checked",
+                            "message": "Opting in is required"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "element-deXhYN",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2300,
+                    "fontSize": 12,
+                    "position": {
+                      "top": 424,
+                      "left": 98
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2022-03-18T14:28:23.579Z",
+      "deleted_at": null,
+      "updated_at": "2022-03-18T14:28:23.579Z",
+      "campaign_id": 188686,
+      "lock_version": 0
+    },
+    "start_at": "2022-04-09T08:56:39.730Z",
+    "template_id": 75,
+    "testing_mode": false,
+    "campaign_type": "Other",
+    "count_as_credit": false,
+    "capping_behaviour": "Uncapped",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 166933,
+    "lock_version": 27,
+    "created_at": "2021-07-06T13:01:13.040Z",
+    "updated_at": "2022-01-07T12:02:28.124Z",
+    "deleted_at": null,
+    "name": "Pure Vibes",
+    "type": "DoubleOverlay",
+    "state": "live",
+    "end_at": null,
+    "category": "Other",
+    "revision": {
+      "id": 27,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {
+              "currentUrl": {
+                "excludes": [],
+                "includes": [
+                  {
+                    "op": "contains",
+                    "type": "string",
+                    "value": "vibing"
+                  }
+                ]
+              }
+            },
+            "triggers": {}
+          }
+        ],
+        "closingGroups": [],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Notification",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "BottomRight",
+                "dimensions": {
+                  "width": "300px",
+                  "height": "200px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/166933/previews/1641556946415/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-79422",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 200
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-86582",
+                    "text": "Pure Vibez",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "next",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 80,
+                      "left": 75
+                    },
+                    "fontStyle": "normal",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 150,
+                      "height": 40
+                    },
+                    "fontFamily": "custom-font-2188, Open Sans",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  }
+                ]
+              },
+              {
+                "format": "Notification",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "BottomRight",
+                "dimensions": {
+                  "width": "300px",
+                  "height": "200px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/166933/previews/1641556946415/desktop/1/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-91612",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 200
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Notification",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "BottomRight",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "200px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/166933/previews/1641556946415/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-26233",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 200
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-84793",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "next",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 80,
+                      "left": 75
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 150,
+                      "height": 40
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  }
+                ]
+              },
+              {
+                "format": "Notification",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "BottomRight",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "200px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/166933/previews/1641556946415/mobile/101/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-66444",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 200
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-07-06T13:01:13.037Z",
+      "deleted_at": null,
+      "updated_at": "2021-07-06T13:01:13.037Z",
+      "campaign_id": 166933,
+      "lock_version": 0
+    },
+    "start_at": "2022-01-07T12:02:28.112Z",
+    "template_id": 102,
+    "is_scheduled": false,
+    "testing_mode": false,
+    "campaign_type": "Other",
+    "count_as_credit": false,
+    "capping_behaviour": "Uncapped",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 174028,
+    "lock_version": 18,
+    "created_at": "2021-10-01T14:05:47.637Z",
+    "updated_at": "2021-10-12T15:11:17.995Z",
+    "deleted_at": null,
+    "name": "Blank single overlay",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "category": "LeadCapture",
+    "revision": {
+      "id": 17,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/174028/previews/1633097979422/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-79422",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/174028/previews/1633097979422/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-62977",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-10-01T14:05:47.609Z",
+      "deleted_at": null,
+      "updated_at": "2021-10-01T14:05:47.609Z",
+      "campaign_id": 174028,
+      "lock_version": 0
+    },
+    "start_at": "2021-10-01T14:20:26.705Z",
+    "experiments": [
+      {
+        "id": 1143008,
+        "test": false,
+        "uuid": "636f02b3-8e0d-4040-8336-980d17662bec",
+        "splits": [
+          {
+            "id": 148193,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 50,
+            "split_type": "control"
+          },
+          {
+            "id": 758432,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 50,
+            "split_type": "a"
+          }
+        ],
+        "ended_at": null,
+        "created_at": "2021-10-12T15:11:17.788Z",
+        "deleted_at": null,
+        "started_at": null,
+        "updated_at": "2021-10-12T15:11:17.788Z",
+        "campaign_id": 174028,
+        "lock_version": 0,
+        "bucketing_key": "c68fee9f-783f-4dd1-862f-9c1653f1ad04"
+      }
+    ],
+    "template_id": 101,
+    "is_scheduled": true,
+    "testing_mode": false,
+    "campaign_type": "Core",
+    "all_experiments": [
+      {
+        "id": 1141724,
+        "test": false,
+        "uuid": "5aa3fdfe-45ac-4fe4-818a-a8dc5f3ab842",
+        "splits": [
+          {
+            "id": 723815,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 33.33,
+            "split_type": "a"
+          },
+          {
+            "id": 189314,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 33.33,
+            "split_type": "b"
+          },
+          {
+            "id": 47561,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 33.33,
+            "split_type": "control"
+          }
+        ],
+        "ended_at": "2021-10-01T14:16:24.044Z",
+        "created_at": "2021-10-01T14:15:44.638Z",
+        "deleted_at": "2021-10-01T14:16:24.044Z",
+        "started_at": null,
+        "updated_at": "2021-10-01T14:16:24.044Z",
+        "campaign_id": 174028,
+        "lock_version": 2,
+        "bucketing_key": "96455ac3-4ccc-4f08-bc5d-19e1c5916869"
+      },
+      {
+        "id": 1141725,
+        "test": false,
+        "uuid": "a07eb54f-a547-4e61-b8f1-08ef511cb38f",
+        "splits": [
+          {
+            "id": 69106,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": true
+            },
+            "weight": 50,
+            "split_type": "control"
+          },
+          {
+            "id": 609712,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": true
+            },
+            "weight": 50,
+            "split_type": "a"
+          }
+        ],
+        "ended_at": "2021-10-01T14:19:11.956Z",
+        "created_at": "2021-10-01T14:17:46.121Z",
+        "deleted_at": "2021-10-01T14:19:11.956Z",
+        "started_at": "2021-10-01T14:18:57.660Z",
+        "updated_at": "2021-10-01T14:19:11.956Z",
+        "campaign_id": 174028,
+        "lock_version": 2,
+        "bucketing_key": "c68fee9f-783f-4dd1-862f-9c1653f1ad04"
+      },
+      {
+        "id": 1141726,
+        "test": false,
+        "uuid": "3a001a24-0cbe-4f09-a7d0-e677b4c8d624",
+        "splits": [
+          {
+            "id": 788704,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": true
+            },
+            "weight": 50,
+            "split_type": "control"
+          },
+          {
+            "id": 722417,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": true
+            },
+            "weight": 50,
+            "split_type": "a"
+          }
+        ],
+        "ended_at": "2021-10-12T15:11:17.640Z",
+        "created_at": "2021-10-01T14:19:12.091Z",
+        "deleted_at": "2021-10-12T15:11:17.640Z",
+        "started_at": "2021-10-01T14:20:26.512Z",
+        "updated_at": "2021-10-12T15:11:17.640Z",
+        "campaign_id": 174028,
+        "lock_version": 2,
+        "bucketing_key": "c68fee9f-783f-4dd1-862f-9c1653f1ad04"
+      },
+      {
+        "id": 1143008,
+        "test": false,
+        "uuid": "636f02b3-8e0d-4040-8336-980d17662bec",
+        "splits": [
+          {
+            "id": 148193,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 50,
+            "split_type": "control"
+          },
+          {
+            "id": 758432,
+            "state": {
+              "isDeleted": false,
+              "hasBeenLaunched": false
+            },
+            "weight": 50,
+            "split_type": "a"
+          }
+        ],
+        "ended_at": null,
+        "created_at": "2021-10-12T15:11:17.788Z",
+        "deleted_at": null,
+        "started_at": null,
+        "updated_at": "2021-10-12T15:11:17.788Z",
+        "campaign_id": 174028,
+        "lock_version": 0,
+        "bucketing_key": "c68fee9f-783f-4dd1-862f-9c1653f1ad04"
+      }
+    ],
+    "count_as_credit": false,
+    "capping_behaviour": "Format",
+    "performance_indicator_ids": ["azmSASklXl", "bOBEbDC97q"],
+    "website_id": 1
+  },
+  {
+    "id": 173940,
+    "lock_version": 5,
+    "created_at": "2021-09-30T11:16:15.319Z",
+    "updated_at": "2021-09-30T14:59:53.409Z",
+    "deleted_at": null,
+    "name": "Blank double overlay",
+    "type": "DoubleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "category": "EmailRemarketing",
+    "revision": {
+      "id": 5,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {
+              "currentUrl": {
+                "excludes": [],
+                "includes": [
+                  {
+                    "op": "contains",
+                    "type": "string",
+                    "value": "product"
+                  }
+                ]
+              },
+              "websitePagesVisited": {
+                "op": "greaterThan",
+                "type": "number",
+                "value": 5
+              }
+            },
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/173940/previews/1633013992914/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-79422",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#41c6bf",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-86582",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 2,
+                    "onClick": {
+                      "type": "next",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 380,
+                      "left": 175
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 150,
+                      "height": 40
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-Gq2mwr",
+                    "src": "https://assets-v2.yieldify.com/images/173940/2021/9/30/e483c8ec-95ec-4121-aafc-a97bdda43213.jpeg",
+                    "type": "image",
+                    "color": "#4e4e4e",
+                    "zIndex": 1,
+                    "fontSize": 25,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "alignment": "none",
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 792,
+                      "height": 497
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "transparent",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "transparent",
+                    "backgroundImage": "none"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              },
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/173940/previews/1633013992914/desktop/1/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-t1vCk-",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-56oX0y",
+                    "text": {
+                      "ops": [
+                        {
+                          "insert": "NICE\n"
+                        }
+                      ]
+                    },
+                    "type": "rich-text",
+                    "zIndex": 1001,
+                    "position": {
+                      "top": 100,
+                      "left": 50
+                    },
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 400,
+                      "height": 100
+                    },
+                    "lineHeight": "1.25",
+                    "borderColor": "white",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "backgroundColor": "transparent"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/173940/previews/1633013992914/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-21292",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#41c6bf",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-88985",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "next",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 380,
+                      "left": 175
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 150,
+                      "height": 40
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              },
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/173940/previews/1633013992914/mobile/101/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-pRo9u4",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-09-30T11:16:15.200Z",
+      "deleted_at": null,
+      "updated_at": "2021-09-30T11:16:15.200Z",
+      "campaign_id": 173940,
+      "lock_version": 0
+    },
+    "start_at": "2021-09-30T11:16:15.200Z",
+    "template_id": 100,
+    "testing_mode": false,
+    "campaign_type": "Core",
+    "count_as_credit": false,
+    "capping_behaviour": "Format",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 173939,
+    "lock_version": 2,
+    "created_at": "2021-09-30T11:15:42.236Z",
+    "updated_at": "2021-09-30T11:15:42.629Z",
+    "deleted_at": null,
+    "name": "Blank single overlay",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "revision": {
+      "id": 2,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/173939/previews/1633000542343/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-79422",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/173939/previews/1633000542343/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-62977",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-09-30T11:15:42.230Z",
+      "deleted_at": null,
+      "updated_at": "2021-09-30T11:15:42.230Z",
+      "campaign_id": 173939,
+      "lock_version": 0
+    },
+    "start_at": "2021-09-30T11:15:42.230Z",
+    "template_id": 101,
+    "testing_mode": false,
+    "capping_behaviour": "Format",
+    "website_id": 1
+  },
+  {
+    "id": 171667,
+    "lock_version": 11,
+    "created_at": "2021-08-31T15:46:10.484Z",
+    "updated_at": "2021-08-31T15:52:23.183Z",
+    "deleted_at": null,
+    "name": "Form Test",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "category": "Other",
+    "revision": {
+      "id": 11,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {
+              "currentUrl": {
+                "excludes": [],
+                "includes": [
+                  {
+                    "op": "contains",
+                    "type": "string",
+                    "value": "kevTest"
+                  }
+                ]
+              }
+            },
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/171667/previews/1630425047203/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-79422",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-6tdmBe",
+                    "type": "form",
+                    "zIndex": 1001,
+                    "children": [
+                      {
+                        "id": "element-3lTpOt",
+                        "text": "Submit",
+                        "type": "cta",
+                        "color": "#fff",
+                        "onClick": {
+                          "type": "dismiss",
+                          "countAsClick": true
+                        },
+                        "fontSize": 16,
+                        "position": {
+                          "top": 370,
+                          "left": 80
+                        },
+                        "alignment": "center",
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 360,
+                          "height": 50
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#07c",
+                        "backgroundImage": "none"
+                      },
+                      {
+                        "id": "element-JMRKeB",
+                        "name": "size",
+                        "size": 20,
+                        "type": "radio-group",
+                        "color": "#4e4e4e",
+                        "zIndex": 1002,
+                        "columns": 3,
+                        "options": [
+                          {
+                            "label": "small",
+                            "value": "small"
+                          }
+                        ],
+                        "fontSize": 16,
+                        "position": {
+                          "top": 143,
+                          "left": 91
+                        },
+                        "alignment": "none",
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 600,
+                          "height": 100
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "borderRadius": {
+                          "unit": "px",
+                          "topLeft": 0,
+                          "topRight": 0,
+                          "bottomLeft": 0,
+                          "bottomRight": 0
+                        },
+                        "textDecoration": "initial",
+                        "backgroundColor": "rgba(255,255,255,0)",
+                        "backgroundImage": "none",
+                        "validationRules": []
+                      },
+                      {
+                        "id": "element-vhlGL9",
+                        "name": "size",
+                        "size": 20,
+                        "type": "checkbox-group",
+                        "color": "#4e4e4e",
+                        "zIndex": 1003,
+                        "columns": 3,
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          }
+                        ],
+                        "fontSize": 16,
+                        "position": {
+                          "top": 265,
+                          "left": 91
+                        },
+                        "alignment": "none",
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 600,
+                          "height": 100
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "borderRadius": {
+                          "unit": "px",
+                          "topLeft": 0,
+                          "topRight": 0,
+                          "bottomLeft": 0,
+                          "bottomRight": 0
+                        },
+                        "textDecoration": "initial",
+                        "backgroundColor": "rgba(255,255,255,0)",
+                        "backgroundImage": "none",
+                        "validationRules": []
+                      }
+                    ]
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/171667/previews/1630425047203/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-62977",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-08-31T15:46:10.481Z",
+      "deleted_at": null,
+      "updated_at": "2021-08-31T15:46:10.481Z",
+      "campaign_id": 171667,
+      "lock_version": 0
+    },
+    "start_at": "2021-08-31T15:50:48.408Z",
+    "template_id": 101,
+    "testing_mode": false,
+    "campaign_type": "Other",
+    "count_as_credit": false,
+    "capping_behaviour": "Uncapped",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 171310,
+    "lock_version": 5,
+    "created_at": "2021-08-26T13:25:30.705Z",
+    "updated_at": "2021-08-26T13:32:53.880Z",
+    "deleted_at": null,
+    "name": "In-Page Banner",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "revision": {
+      "id": 5,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {
+              "currentUrl": {
+                "excludes": [],
+                "includes": [
+                  {
+                    "op": "contains",
+                    "type": "string",
+                    "value": "ct"
+                  }
+                ]
+              }
+            },
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Banner",
+                "margin": {
+                  "vertical": 0,
+                  "horizontal": 0
+                },
+                "position": "Top",
+                "dimensions": {
+                  "width": "1000px",
+                  "height": "50px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/171310/previews/1629984773586/desktop/0/preview.png",
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-97549",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 1000,
+                      "height": 50
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-41400",
+                    "text": "Main banner message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 14,
+                      "left": 58
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 184,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-87280",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 9,
+                      "left": 803
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 130,
+                      "height": 30
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-0wBbYf",
+                    "text": {
+                      "ops": [
+                        {
+                          "insert": "➡️\n"
+                        }
+                      ]
+                    },
+                    "type": "rich-text",
+                    "zIndex": 3001,
+                    "position": {
+                      "top": 3.5,
+                      "left": 401
+                    },
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 239,
+                      "height": 25
+                    },
+                    "lineHeight": "1.25",
+                    "borderColor": "white",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "backgroundColor": "transparent"
+                  },
+                  {
+                    "id": "element-Q5lRvT",
+                    "name": "countdown-timer",
+                    "type": "advanced-component",
+                    "zIndex": 3002,
+                    "position": {
+                      "top": 12.5,
+                      "left": 397
+                    },
+                    "dimensions": {
+                      "width": 345,
+                      "height": 26
+                    },
+                    "parameters": {
+                      "end": "2021-09-03T15:20:30+01:00",
+                      "type": "datetime-timezone",
+                      "version": "2",
+                      "fontName": "Montserrat",
+                      "fontSize": 25,
+                      "template": {
+                        "text": "${days}${hours}${minutes}",
+                        "unitLabel": {
+                          "style": {
+                            "fontSize": 11,
+                            "position": "bottom",
+                            "fontColor": "white",
+                            "textAlign": "center",
+                            "distanceFromDigits": 15
+                          },
+                          "units": {
+                            "days": "days",
+                            "hours": "hours",
+                            "minutes": "minutes",
+                            "seconds": "seconds"
+                          }
+                        }
+                      },
+                      "fontColor": "black",
+                      "largestUnit": "day",
+                      "unitSpacing": 18,
+                      "letterSpacing": 15
+                    }
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Banner",
+                "margin": {
+                  "vertical": 0,
+                  "horizontal": 0
+                },
+                "position": "Top",
+                "dimensions": {
+                  "width": "700px",
+                  "height": "70px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/171310/previews/1629984773586/mobile/100/preview.png",
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-31997",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 700,
+                      "height": 70
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-78376",
+                    "text": "Main banner message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 18,
+                    "position": {
+                      "top": 22,
+                      "left": 23
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 204,
+                      "height": 23
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-88348",
+                    "text": "Banner subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 23,
+                      "left": 254
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 233,
+                      "height": 20
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-99300",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 18,
+                      "left": 520
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 120,
+                      "height": 30
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-08-26T13:25:30.686Z",
+      "deleted_at": null,
+      "updated_at": "2021-08-26T13:25:30.686Z",
+      "campaign_id": 171310,
+      "lock_version": 0
+    },
+    "start_at": "2021-08-26T13:25:30.686Z",
+    "template_id": 83,
+    "testing_mode": false,
+    "capping_behaviour": "Campaign",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 171041,
+    "lock_version": 5,
+    "created_at": "2021-08-24T10:21:48.230Z",
+    "updated_at": "2021-08-24T10:22:49.455Z",
+    "deleted_at": null,
+    "name": "Demo Day - PI State",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "category": "LeadCapture",
+    "revision": {
+      "id": 4,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {
+              "userIsLead": {
+                "op": "equals",
+                "type": "boolean",
+                "value": false
+              }
+            },
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/171041/previews/1629800569164/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-79422",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#41c6bf",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-86582",
+                    "text": "Subheader message ",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 190,
+                      "left": 68
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 613,
+                      "height": 34
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-41532",
+                    "text": "PI STATE DEMO\n",
+                    "type": "text",
+                    "color": "#5e2ca8",
+                    "zIndex": 2100,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 110,
+                      "left": 68
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 518,
+                      "height": 64
+                    },
+                    "fontFamily": "custom-font-2481, Open Sans",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-30349",
+                    "type": "form",
+                    "zIndex": 2200,
+                    "children": [
+                      {
+                        "id": "element-25264",
+                        "name": "email",
+                        "text": "",
+                        "type": "input",
+                        "color": "#0f0f0f",
+                        "zIndex": 2200,
+                        "fontSize": 16,
+                        "position": {
+                          "top": 247,
+                          "left": 68
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 300,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "initial",
+                        "lineHeight": "1.25",
+                        "borderColor": "rgba(153,153,153,0.5)",
+                        "placeholder": "Enter your email",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#fff",
+                        "validationRules": [
+                          {
+                            "type": "required",
+                            "message": "Email is required."
+                          },
+                          {
+                            "rule": "email",
+                            "type": "default-regex"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "element-17040",
+                        "text": "Button",
+                        "type": "cta",
+                        "color": "#fff",
+                        "zIndex": 3000,
+                        "onClick": {
+                          "type": "dismiss",
+                          "countAsClick": true
+                        },
+                        "fontSize": 16,
+                        "position": {
+                          "top": 352,
+                          "left": 68
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 160,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "#ffffff",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#07c"
+                      },
+                      {
+                        "id": "element-71864",
+                        "name": "opt-in-checkbox",
+                        "text": "Mandatory opt in wording",
+                        "type": "checkbox",
+                        "color": "#4e4e4e",
+                        "zIndex": 2230,
+                        "fontSize": 12,
+                        "position": {
+                          "top": 294,
+                          "left": 68
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 250,
+                          "height": 21
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "textDecoration": "initial",
+                        "backgroundColor": "transparent",
+                        "backgroundImage": "none",
+                        "validationRules": [
+                          {
+                            "type": "checked",
+                            "message": "Opting in is required"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "element-66976",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2300,
+                    "fontSize": 12,
+                    "position": {
+                      "top": 405,
+                      "left": 68
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 232,
+                      "height": 15
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/171041/previews/1629800569164/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-61902",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#41c6bf",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-87572",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 190,
+                      "left": 11
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 478,
+                      "height": 46
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-75182",
+                    "text": "Header message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 110,
+                      "left": 11
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 478,
+                      "height": 57
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-39824",
+                    "type": "form",
+                    "zIndex": 2200,
+                    "children": [
+                      {
+                        "id": "element-33891",
+                        "name": "email",
+                        "text": "",
+                        "type": "input",
+                        "color": "rgba(29,28,28,0.91)",
+                        "zIndex": 2200,
+                        "fontSize": 16,
+                        "position": {
+                          "top": 247,
+                          "left": 100
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "left",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 300,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "initial",
+                        "lineHeight": "1.25",
+                        "borderColor": "rgba(153,153,153,0.5)",
+                        "placeholder": "Enter your email",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#fff",
+                        "validationRules": [
+                          {
+                            "type": "required",
+                            "message": "Email is required."
+                          },
+                          {
+                            "rule": "email",
+                            "type": "default-regex"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "element-18960",
+                        "text": "Button",
+                        "type": "cta",
+                        "color": "#fff",
+                        "zIndex": 3000,
+                        "onClick": {
+                          "type": "dismiss",
+                          "countAsClick": true
+                        },
+                        "fontSize": 16,
+                        "position": {
+                          "top": 367,
+                          "left": 170
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 0,
+                        "dimensions": {
+                          "width": 160,
+                          "height": 40
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "#ffffff",
+                        "textDecoration": "initial",
+                        "backgroundColor": "#07c"
+                      },
+                      {
+                        "id": "element-18895",
+                        "name": "opt-in-checkbox",
+                        "text": "Mandatory opt in wording",
+                        "type": "checkbox",
+                        "color": "#4e4e4e",
+                        "zIndex": 2230,
+                        "fontSize": 12,
+                        "position": {
+                          "top": 300,
+                          "left": 99
+                        },
+                        "fontStyle": "initial",
+                        "textAlign": "center",
+                        "borderSize": 1,
+                        "dimensions": {
+                          "width": 174,
+                          "height": 21
+                        },
+                        "fontFamily": "'Open Sans', sans-serif",
+                        "fontWeight": "normal",
+                        "lineHeight": "1.25",
+                        "borderColor": "transparent",
+                        "textDecoration": "initial",
+                        "backgroundColor": "transparent",
+                        "backgroundImage": "none",
+                        "validationRules": [
+                          {
+                            "type": "checked",
+                            "message": "Opting in is required"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "element-44219",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2300,
+                    "fontSize": 12,
+                    "position": {
+                      "top": 424,
+                      "left": 98
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "lineHeight": "1.25",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-08-24T10:21:48.222Z",
+      "deleted_at": null,
+      "updated_at": "2021-08-24T10:21:48.222Z",
+      "campaign_id": 171041,
+      "lock_version": 0
+    },
+    "start_at": "2021-08-24T10:21:48.222Z",
+    "template_id": 75,
+    "testing_mode": false,
+    "campaign_type": "Core",
+    "count_as_credit": false,
+    "capping_behaviour": "Format",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 161309,
+    "lock_version": 18,
+    "created_at": "2021-04-29T11:09:34.267Z",
+    "updated_at": "2021-07-06T12:51:37.889Z",
+    "deleted_at": null,
+    "name": "Copy of Single overlay",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "category": "EmailRemarketing",
+    "revision": {
+      "id": 17,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {
+              "pageType": {
+                "excludes": [
+                  {
+                    "op": "equals",
+                    "value": "fe446c78-95e9-44d0-ba74-7ff50cdc42b1"
+                  }
+                ],
+                "includes": [
+                  {
+                    "op": "equals",
+                    "value": "ccd62e48-8c21-460a-a986-2b3631dbd0e7"
+                  },
+                  {
+                    "op": "equals",
+                    "value": "049d7c81-4887-4f8b-9625-241ad85ca371"
+                  }
+                ]
+              },
+              "urlPagesVisited": {
+                "excludes": [
+                  {
+                    "op": "contains",
+                    "type": "string",
+                    "times": {
+                      "op": "lessThan",
+                      "type": "number",
+                      "value": 5
+                    },
+                    "value": "abc"
+                  }
+                ],
+                "includes": []
+              }
+            },
+            "triggers": {}
+          },
+          {
+            "name": "User group 2",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "800px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/161309/previews/1625575893202/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-1895",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 800,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-51579",
+                    "text": "Main header\nmessage\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 77,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 555,
+                      "height": 134
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "borderColor": "#ffffff",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-59313",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 242,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 527,
+                      "height": 54
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-22255",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 25,
+                    "position": {
+                      "top": 330,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 260,
+                      "height": 58
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-64807",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2200,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 425,
+                      "left": 70
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 451,
+                      "height": 15
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ],
+                "wrapperSettings": {
+                  "expand": false,
+                  "fullscreen": false
+                }
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Overlay",
+                "margin": {
+                  "vertical": 15,
+                  "horizontal": 15
+                },
+                "position": "Centre",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "500px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/161309/previews/1625575893202/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": true,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-29145",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-46278",
+                    "text": "Main header\nmessage\n",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 50,
+                    "position": {
+                      "top": 85,
+                      "left": 73
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 354,
+                      "height": 128
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-24808",
+                    "text": "Subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 30,
+                    "position": {
+                      "top": 255,
+                      "left": 77.5
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 345,
+                      "height": 47
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-5718",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 25,
+                    "position": {
+                      "top": 345,
+                      "left": 90
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 321,
+                      "height": 70
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  },
+                  {
+                    "id": "element-41455",
+                    "text": "Terms & Conditions",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2200,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 446,
+                      "left": 100
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-04-23T11:39:07.526Z",
+      "deleted_at": null,
+      "updated_at": "2021-04-23T11:39:07.526Z",
+      "campaign_id": 161309,
+      "lock_version": 0
+    },
+    "start_at": "2021-05-04T17:09:00.000Z",
+    "experiments": [],
+    "template_id": 68,
+    "is_scheduled": false,
+    "testing_mode": false,
+    "campaign_type": "Core",
+    "all_experiments": [],
+    "count_as_credit": false,
+    "capping_behaviour": "Format",
+    "performance_indicator_ids": [],
+    "website_id": 1
+  },
+  {
+    "id": 164257,
+    "lock_version": 4,
+    "created_at": "2021-06-04T13:15:26.178Z",
+    "updated_at": "2021-06-04T13:15:26.375Z",
+    "deleted_at": null,
+    "name": "Blank single notification",
+    "type": "SingleOverlay",
+    "state": "paused",
+    "end_at": null,
+    "revision": {
+      "id": 2,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Notification",
+                "position": "BottomRight",
+                "dimensions": {
+                  "width": "300px",
+                  "height": "90px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/164257/previews/1622812526190/desktop/0/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-1895",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 300,
+                      "height": 90
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Notification",
+                "position": "BottomRight",
+                "dimensions": {
+                  "width": "500px",
+                  "height": "90px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/164257/previews/1622812526190/mobile/100/preview.png",
+                "closeButton": {
+                  "position": {
+                    "top": 0,
+                    "right": 0
+                  }
+                },
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-1895",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 500,
+                      "height": 90
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-06-04T13:15:26.133Z",
+      "deleted_at": null,
+      "updated_at": "2021-06-04T13:15:26.133Z",
+      "campaign_id": 164257,
+      "lock_version": 0
+    },
+    "start_at": "2021-06-04T13:15:26.133Z",
+    "template_id": 105,
+    "is_scheduled": false,
+    "testing_mode": false,
+    "capping_behaviour": "Campaign",
+    "website_id": 1
+  },
+  {
+    "id": 162275,
+    "lock_version": 8,
+    "created_at": "2021-05-12T08:16:13.251Z",
+    "updated_at": "2021-05-12T08:16:33.760Z",
+    "deleted_at": null,
+    "name": "In-Page Banner",
+    "type": "SingleOverlay",
+    "state": "live",
+    "end_at": null,
+    "revision": {
+      "id": 5,
+      "specs": {
+        "userGroups": [
+          {
+            "name": "User Group 1",
+            "targets": {},
+            "triggers": {}
+          }
+        ],
+        "creativeGroups": [
+          {
+            "device": "desktop",
+            "stages": [
+              {
+                "format": "Banner",
+                "margin": {
+                  "vertical": 0,
+                  "horizontal": 0
+                },
+                "position": "Top",
+                "dimensions": {
+                  "width": "1000px",
+                  "height": "50px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/162275/previews/1620807393440/desktop/0/preview.png",
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-1895",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 1000,
+                      "height": 50
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "borderRadius": {
+                      "unit": "px",
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomLeft": 0,
+                      "bottomRight": 0
+                    },
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-51579",
+                    "text": "Main banner message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 14,
+                      "left": 58
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 184,
+                      "height": 18
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-59313",
+                    "text": "Banner subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2300,
+                    "fontSize": 14,
+                    "position": {
+                      "top": 14,
+                      "left": 450
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 319,
+                      "height": 25
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-37238",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 9,
+                      "left": 803
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 130,
+                      "height": 30
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          },
+          {
+            "device": "mobile",
+            "stages": [
+              {
+                "format": "Banner",
+                "margin": {
+                  "vertical": 0,
+                  "horizontal": 0
+                },
+                "position": "Top",
+                "dimensions": {
+                  "width": "700px",
+                  "height": "70px"
+                },
+                "previewUrl": "https://assets-v2.yieldify.com/organisation/1/website/1/campaign/162275/previews/1620807393440/mobile/100/preview.png",
+                "hasBackdrop": false,
+                "accessibility": {
+                  "readOrder": "top-left",
+                  "defaultFocusStyles": true
+                },
+                "overlayElements": [
+                  {
+                    "id": "element-1895",
+                    "text": "",
+                    "type": "body",
+                    "color": "initial",
+                    "zIndex": 0,
+                    "fontSize": 0,
+                    "position": {
+                      "top": 0,
+                      "left": 0
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "initial",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 700,
+                      "height": 70
+                    },
+                    "fontFamily": "initial",
+                    "fontWeight": "initial",
+                    "borderColor": "rgba(13,152,235,1)",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#ededed"
+                  },
+                  {
+                    "id": "element-51579",
+                    "text": "Main banner message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2000,
+                    "fontSize": 18,
+                    "position": {
+                      "top": 22,
+                      "left": 23
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 204,
+                      "height": 23
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "bold",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-59313",
+                    "text": "Banner subheader message",
+                    "type": "text",
+                    "color": "#4e4e4e",
+                    "zIndex": 2100,
+                    "fontSize": 16,
+                    "position": {
+                      "top": 23,
+                      "left": 254
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "left",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 233,
+                      "height": 20
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "normal",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "rgba(255,255,255,0)"
+                  },
+                  {
+                    "id": "element-37238",
+                    "text": "Button",
+                    "type": "cta",
+                    "color": "#fff",
+                    "zIndex": 3000,
+                    "onClick": {
+                      "type": "dismiss",
+                      "countAsClick": true
+                    },
+                    "fontSize": 16,
+                    "position": {
+                      "top": 18,
+                      "left": 520
+                    },
+                    "fontStyle": "initial",
+                    "textAlign": "center",
+                    "borderSize": 0,
+                    "dimensions": {
+                      "width": 120,
+                      "height": 30
+                    },
+                    "fontFamily": "'Open Sans', sans-serif",
+                    "fontWeight": "initial",
+                    "borderColor": "#ffffff",
+                    "textDecoration": "initial",
+                    "backgroundColor": "#07c"
+                  }
+                ]
+              }
+            ],
+            "splitType": "a"
+          }
+        ]
+      },
+      "images": [],
+      "created_at": "2021-05-12T08:16:12.705Z",
+      "deleted_at": null,
+      "updated_at": "2021-05-12T08:16:12.705Z",
+      "campaign_id": 162275,
+      "lock_version": 0
+    },
+    "start_at": "2021-05-12T08:16:12.705Z",
+    "template_id": 83,
+    "is_scheduled": false,
+    "testing_mode": true,
+    "capping_behaviour": "Campaign",
+    "website_id": 1
+  }
+]
