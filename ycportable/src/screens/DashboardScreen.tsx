@@ -37,8 +37,7 @@ export default function DashboardScreen({
 
   // TODO: remove mocked Token
   const { token } = useAuth();
-
-  //const token = 'mocked!';
+  // const token = 'mocked!';
 
   useEffect(() => {
     onPressTouch();
@@ -159,7 +158,7 @@ export default function DashboardScreen({
         <ScrollView ref={scrollRef}>
           {campaigns.map((campaign) => {
             return (
-              <View>
+              <View key={campaign.id}>
                 <View key={campaign.id}>
                   <View key={campaign.id} style={styles.campaignInfoContainer}>
                     <View style={styles.campaignTextsContainer}>
@@ -369,7 +368,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 4,
 
-    maxWidth: 'fit-content',
+    maxWidth: '80%',
 
     alignItems: 'center',
     justifyContent: 'center',

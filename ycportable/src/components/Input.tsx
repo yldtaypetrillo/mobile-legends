@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
 import {
   TextInput,
   StyleSheet,
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 12,
     flex: 1,
-    outlineWidth: 0,
+    // outlineWidth: 0,
   },
   focusedInput: {
     backgroundColor: theme.colors.lightblue,

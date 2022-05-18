@@ -13,8 +13,8 @@ import DashboardScreen from '../screens/DashboardScreen';
 
 export default function Navigation({}: {}) {
   // TODO: remove mocked signedIn
-   const { isSignedIn } = useAuth();
-  //const isSignedIn = true;
+  const { isSignedIn } = useAuth();
+  // const isSignedIn = true;
 
   return (
     <NavigationContainer>
