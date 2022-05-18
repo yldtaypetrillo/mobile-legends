@@ -7,9 +7,9 @@ import { EmailCampaignImageComponent } from '../components/EmailCampaignImageCom
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
 
-export default function TabOneScreen({
+export default function DashboardScreen({
   navigation,
-}: RootTabScreenProps<'TabOne'>) {
+}: RootTabScreenProps<'Dashboard'>) {
   const [state, setState] = useState<CampaignConfiguration[]>([]);
   const { token } = useAuth();
 
