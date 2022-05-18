@@ -6,15 +6,15 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
-import {
-  RootStackParamList
-} from '../../types';
+import { RootStackParamList } from '../../types';
 import { useAuth } from '../hooks/useAuth';
 import LoginScreen from '../screens/LoginScreen';
 import DashboardScreen from '../screens/DashboardScreen';
 
 export default function Navigation({}: {}) {
-  const { isSignedIn } = useAuth();
+  // TODO: remove mocked signedIn
+  // const { isSignedIn } = useAuth();
+  const isSignedIn = true;
 
   return (
     <NavigationContainer>
