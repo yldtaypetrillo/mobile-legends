@@ -16,11 +16,3 @@ export interface pageButtonProps {
   title: string;
 
 }
-
-export const getActiveVariantsFromExperiment = (experiment: Experiment): Variant[] => {
-  const { splits } = experiment;
-
-  return splits
-    .filter(({ split_type, state }) => split_type !== 'control' && !state.isDeleted)
-    .map((split: Split) => split.split_type);
-};
