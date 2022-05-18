@@ -17,8 +17,6 @@ export async function fetchCampaigns({
 
   const data = require('../config/mocked-campaigns.json');
 
-  console.log(data);
-
   return data;
 }
 
