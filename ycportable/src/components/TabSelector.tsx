@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   tabSelector: {
     fontSize: 14,
     paddingHorizontal: 16,
-    paddingVertical: 4,
+    paddingBottom: 4,
     borderRadius: 100,
 
     borderWidth: 1,
