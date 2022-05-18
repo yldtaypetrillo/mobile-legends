@@ -1,37 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
-  Pressable,
   Button,
+  Pressable,
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
 } from 'react-native';
-
+import RBSheet from 'react-native-raw-bottom-sheet';
 import { Campaign, CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';
+import { CampaignButton } from '../components/CampaignButton';
 import { CampaignImageComponent } from '../components/CampaignImageComponent';
 import { EmailCampaignImageComponent } from '../components/EmailCampaignImageComponent';
+import { Header } from '../components/Header';
 import { Input } from '../components/Input';
 import { TabSelector } from '../components/TabSelector';
-import { Header } from '../components/Header';
-import { CampaignButton } from '../components/CampaignButton';
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
-import { fetchCampaigns } from '../utils/fetchCampaigns';
-import RBSheet from 'react-native-raw-bottom-sheet';
 import { theme } from '../theme';
-import { CaretDown, Eye } from 'phosphor-react-native';
+import { fetchCampaigns } from '../utils/fetchCampaigns';
 
 export default function DashboardScreen({
   navigation,
-}: RootTabScreenProps<"Dashboard">) {
+}: RootTabScreenProps<'Dashboard'>) {
   const [campaigns, setCampaigns] = useState<CampaignConfiguration[]>([]);
   const [pageNumber, setPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [campaignState, setCampaignState] = useState("");
-  const [campaignUpdateStatus, setCampaignUpdateStatus] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
+  const [campaignState, setCampaignState] = useState('');
+  const [campaignUpdateStatus, setCampaignUpdateStatus] = useState('');
 
   const [selectedCampaign, setSelectedCampaign] = useState<
     CampaignConfiguration | undefined
@@ -45,10 +42,9 @@ export default function DashboardScreen({
   useEffect(() => {
     onPressTouch();
     if (token) {
-
       setCampaignUpdateStatus('');
       fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
-        (campaigns) => setCampaigns(campaigns)
+        (campaigns) => setCampaigns(campaigns),
       );
     }
   }, [pageNumber, searchTerm, campaignState, campaignUpdateStatus]);
@@ -59,7 +55,7 @@ export default function DashboardScreen({
         campaign;
       }).length < 15
     ) {
-      console.log("Last page");
+      console.log('Last page');
       return;
     }
     onPressTouch();
@@ -82,19 +78,18 @@ export default function DashboardScreen({
   };
 
   const handleUpdateClick = (campaign: Campaign, option: string) => {
-
-    if (campaign.testing_mode && option == "Launch") {
-      updateCampaign(campaign, "stop_testing_mode");
+    if (campaign.testing_mode && option == 'Launch') {
+      updateCampaign(campaign, 'stop_testing_mode');
     } else {
       switch (option) {
-        case "Launch":
-          updateCampaign(campaign, "apply_revision");
+        case 'Launch':
+          updateCampaign(campaign, 'apply_revision');
           break;
-        case "Pause":
-          updateCampaign(campaign, "pause");
+        case 'Pause':
+          updateCampaign(campaign, 'pause');
           break;
-        case "Preview Mode":
-          updateCampaign(campaign, "start_testing_mode");
+        case 'Preview Mode':
+          updateCampaign(campaign, 'start_testing_mode');
           break;
       }
     }
@@ -110,11 +105,11 @@ export default function DashboardScreen({
           'Content-Type': 'application/json',
         }),
         method: 'POST',
-      }
+      },
     )
       .then((response) => response.json())
       .then((json) => {
-        setCampaignUpdateStatus("updated");
+        setCampaignUpdateStatus('updated');
       })
       .catch((err) => console.error(err));
   };
@@ -150,13 +145,13 @@ export default function DashboardScreen({
 
   return (
     <View style={styles.container}>
-      <Header headerText="Dashboard" />
+      <Header headerText='Dashboard' />
       <View style={styles.main}>
         <TabSelector onSelect={setCampaignState} />
         <View style={styles.input}>
           <Input
             error={false}
-            placeholder={"Search campaigns by name or ID"}
+            placeholder={'Search campaigns by name or ID'}
             onChangeText={(text: string) => setSearchTerm(text)}
           />
         </View>
@@ -206,36 +201,55 @@ export default function DashboardScreen({
                     closeOnDragDown={true}
                     closeOnPressMask={true}
                     customStyles={{
-                      container: { borderTopEndRadius: 40, borderTopStartRadius: 40, height: 200 },
+                      container: {
+                        borderTopEndRadius: 40,
+                        borderTopStartRadius: 40,
+                        height: 200,
+                      },
                       wrapper: {
-                        backgroundColor: "rgba(1,1,1,0.5)",
+                        backgroundColor: 'rgba(1,1,1,0.5)',
                       },
                       draggableIcon: {
-                        backgroundColor: "#000",
+                        backgroundColor: '#000',
                       },
                     }}
                   >
-                    <View style={{ justifyContent: "center", alignItems: "center", paddingBottom: 20, borderBottomColor: '#F4F4F4', borderBottomWidth: 1 }}>
-                      <Text style={{ fontSize: 19, fontWeight: '500' }}>{selectedCampaign?.name}</Text>
-                      <Text style={{ color: '#AFAFAF', fontSize: 14, fontWeight: '400' }}>#{selectedCampaign?.id}</Text>
+                    <View
+                      style={{
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        paddingBottom: 20,
+                        borderBottomColor: '#F4F4F4',
+                        borderBottomWidth: 1,
+                      }}
+                    >
+                      <Text style={{ fontSize: 19, fontWeight: '500' }}>
+                        {selectedCampaign?.name}
+                      </Text>
+                      <Text
+                        style={{
+                          color: '#AFAFAF',
+                          fontSize: 14,
+                          fontWeight: '400',
+                        }}
+                      >
+                        #{selectedCampaign?.id}
+                      </Text>
                     </View>
                     {<UpdateOptions campaign={selectedCampaign!} />}
                   </RBSheet>
                 </View>
                 <View style={styles.separator} />
-
               </View>
             );
           })}
 
           <View style={styles.pagination}>
-            <Button onPress={clickedPreviousPageButton} title={"<"}>
-            </Button>
+            <Button onPress={clickedPreviousPageButton} title={'<'}></Button>
 
             <Text>Page: {pageNumber}</Text>
 
-            <Button onPress={clickedNextPageButton} title={">"}>
-            </Button>
+            <Button onPress={clickedNextPageButton} title={'>'}></Button>
           </View>
         </ScrollView>
       </View>
@@ -247,20 +261,17 @@ export default function DashboardScreen({
   }
 
   function UpdateOptions({ campaign }: updateOptionsProps) {
-
-    const startOption: string = "Launch";
-    const pauseOption: string = "Pause";
-    const previewOption: string = "Preview Mode";
+    const startOption: string = 'Launch';
+    const pauseOption: string = 'Pause';
+    const previewOption: string = 'Preview Mode';
 
     const startButton = (
       <Pressable
         style={({ pressed }) => [
           {
-            backgroundColor: pressed
-              ? 'rgb(210, 230, 255)'
-              : 'white'
+            backgroundColor: pressed ? 'rgb(210, 230, 255)' : 'white',
           },
-          styles.button
+          styles.button,
         ]}
         onPress={() => handleUpdateClick(campaign, startOption)}
       >
@@ -272,12 +283,11 @@ export default function DashboardScreen({
       <Pressable
         style={({ pressed }) => [
           {
-            backgroundColor: pressed
-              ? 'rgb(210, 230, 255)'
-              : 'white'
+            backgroundColor: pressed ? 'rgb(210, 230, 255)' : 'white',
           },
-          styles.button
-        ]} onPress={() => handleUpdateClick(campaign, pauseOption)}
+          styles.button,
+        ]}
+        onPress={() => handleUpdateClick(campaign, pauseOption)}
       >
         <Text style={{ fontSize: 19 }}>{pauseOption}</Text>
       </Pressable>
@@ -287,11 +297,9 @@ export default function DashboardScreen({
       <Pressable
         style={({ pressed }) => [
           {
-            backgroundColor: pressed
-              ? 'rgb(210, 230, 255)'
-              : 'white'
+            backgroundColor: pressed ? 'rgb(210, 230, 255)' : 'white',
           },
-          styles.button
+          styles.button,
         ]}
         onPress={() => handleUpdateClick(campaign, previewOption)}
       >
@@ -307,8 +315,7 @@ export default function DashboardScreen({
       return <></>;
     }
 
-
-    if (campaign.state === "paused") {
+    if (campaign.state === 'paused') {
       if (isEmailCampaign(campaign)) {
         // You can't set email standalone campaigns to preview mode
         return <>{startButton}</>;
@@ -316,7 +323,6 @@ export default function DashboardScreen({
 
       return (
         <>
-
           {startButton}
           {previewButton}
         </>
@@ -326,7 +332,6 @@ export default function DashboardScreen({
     if ((campaign as Campaign).testing_mode) {
       return (
         <>
-
           {startButton}
           {pauseButton}
         </>
@@ -349,7 +354,6 @@ export default function DashboardScreen({
   }
 }
 
-
 function ReturnImage({ campaign }: returnImageProps) {
   return isEmailCampaign(campaign) ? (
     <EmailCampaignImageComponent campaign={campaign} />
@@ -361,7 +365,7 @@ function ReturnImage({ campaign }: returnImageProps) {
 const styles = StyleSheet.create({
   container: {
     paddingTop: '8%',
-    flex: 1
+    flex: 1,
   },
   main: {
     backgroundColor: '#FFF',
@@ -437,5 +441,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginBottom: 24,
   },
 });
