@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 import { LoginButton } from '../components/LoginButton';
 import { useAuth } from '../hooks/useAuth';
 import { theme } from '../theme';
@@ -19,7 +19,7 @@ export default function LoginScreen() {
 
       <View style={styles.loginButtonContainer}>
         <Image
-          source={require('../assets/images/logo.svg')}
+          source={require('../assets/images/logo.png')}
           style={styles.logo}
         />
         <LoginButton onPress={login} isLoading={false} />
@@ -44,20 +44,16 @@ const styles = StyleSheet.create({
 
   loginButtonContainer: {
     height: 340,
-
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 40,
-
     borderRadius: 24,
-
     marginTop: -50,
-
     backgroundColor: theme.colors.white,
   },
 
   logo: {
     height: 48,
     width: 162,
+    marginBottom: 40,
   },
 });
