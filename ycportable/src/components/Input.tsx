@@ -34,7 +34,7 @@ export function Input({ error, isPassword, ...rest }: Props) {
         onBlur={() => {
           setIsInputFocus(false);
         }}
-        secureTextEntry={!showPassword}
+        secureTextEntry={!isPassword ? false : !showPassword}
         {...rest}
       />
 

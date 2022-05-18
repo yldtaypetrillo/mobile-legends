@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, FlatList, Button } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 import { CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';
 import { CampaignImageComponent } from '../components/CampaignImageComponent';
@@ -28,7 +28,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       .then(json => {
         setState(json); // access json.body here
       }).catch((err) => alert(err))
-  }, [pageNumber]);
+  }, [pageNumber, searchTerm]);
 
   const clickedNextPageButton = () => {
     if (state.map((campaign) => { campaign }).length < 15) {
@@ -58,7 +58,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
   return (
     <View style={styles.container}>
       <ScrollView ref={scrollRef}>
-      <Input error={false} placeholder={'Search campaigns by name or ID'} isPassword={false} />
+        <Input error={false} placeholder={'Search campaigns by name or ID'} isPassword={false} onChangeText={(text: string) => text != '' ? setSearchTerm(`&search[filter]=${text}`) : setSearchTerm('')} />
         {state.map((campaign) => {
           return (
             <View key={campaign.id}>
@@ -77,9 +77,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
         <Text>{pageNumber}</Text>
 
         <Button
-          onPress={
-            clickedNextPageButton
-          }
+          onPress={clickedNextPageButton}
           title='NextPage'
         >
           Next Page
