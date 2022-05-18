@@ -13,7 +13,7 @@ export async function fetchCampaigns({
   searchTerm,
   campaignState,
 }: CampaignsSearchProps) {
-  await delay(2000);
+  await delay(1000);
 
   const data = require('../config/mocked-campaigns.json');
 
