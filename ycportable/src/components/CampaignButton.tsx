@@ -78,13 +78,6 @@ export function CampaignButton({ campaign, onPress }: CampaignButtonProps) {
       };
     }
 
-    if (campaign.testing_mode && campaignState === 'live') {
-      return {
-        borderColor: theme.colors.darkblue,
-        backgroundColor: theme.colors.darkblue,
-      };
-    }
-
     if (campaign.is_scheduled && campaign.state !== 'live') {
       return {
         borderColor: theme.colors.darkblue,
