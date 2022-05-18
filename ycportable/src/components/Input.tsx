@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import  { useState } from 'react';
 import {
   TextInput,
   StyleSheet,
@@ -7,7 +7,6 @@ import {
   Pressable,
 } from 'react-native';
 import { theme } from '../theme';
-
 import { Eye, EyeSlash } from 'phosphor-react-native';
 
 interface Props extends TextInputProps {
@@ -34,7 +33,7 @@ export function Input({ error, isPassword, ...rest }: Props) {
         onBlur={() => {
           setIsInputFocus(false);
         }}
-        secureTextEntry={!showPassword}
+        secureTextEntry={!isPassword ? false : !showPassword}
         {...rest}
       />
 
