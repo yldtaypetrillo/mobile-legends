@@ -6,6 +6,7 @@ import { CampaignImageComponent } from '../components/CampaignImageComponent';
 import { EmailCampaignImageComponent } from '../components/EmailCampaignImageComponent';
 import { Input } from '../components/Input';
 import { TabSelector } from '../components/TabSelector';
+import { Header } from '../components/Header';
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
 import { fetchCampaigns } from '../utils/fetchCampaigns';
@@ -63,32 +64,37 @@ export default function DashboardScreen({
 
   return (
     <View style={styles.container}>
-      <TabSelector onSelect={setCampaignState}></TabSelector>
-      <Input
-        error={false}
-        placeholder={'Search campaigns by name or ID'}
-        onChangeText={(text: string) => setSearchTerm(text)}
-      />
-      <ScrollView ref={scrollRef}>
-        {campaigns.map((campaign) => {
-          return (
-            <View key={campaign.id}>
-              <Text>{campaign.name}</Text>
-              <ReturnImage campaign={campaign}></ReturnImage>
-            </View>
-          );
-        })}
+      <Header headerText='Dashboard' />
+      <View style={styles.main}>
+        <TabSelector onSelect={setCampaignState} />
+        <View style={styles.input}>
+          <Input
+            error={false}
+            placeholder={'Search campaigns by name or ID'}
+            onChangeText={(text: string) => setSearchTerm(text)}
+          />
+        </View>
+        <ScrollView ref={scrollRef}>
+          {campaigns.map((campaign) => {
+            return (
+              <View key={campaign.id}>
+                <Text>{campaign.name}</Text>
+                <ReturnImage campaign={campaign}></ReturnImage>
+              </View>
+            );
+          })}
 
-        <Button onPress={clickedPreviousPageButton} title='PreviousPage'>
-          Previous Page
-        </Button>
+          <Button onPress={clickedPreviousPageButton} title='PreviousPage'>
+            Previous Page
+          </Button>
 
-        <Text>{pageNumber}</Text>
+          <Text>{pageNumber}</Text>
 
-        <Button onPress={clickedNextPageButton} title='NextPage'>
-          Next Page
-        </Button>
-      </ScrollView>
+          <Button onPress={clickedNextPageButton} title='NextPage'>
+            Next Page
+          </Button>
+        </ScrollView>
+      </View>
     </View>
   );
 }
@@ -103,14 +109,22 @@ function ReturnImage({ campaign }: returnImageProps) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    paddingTop: '15%',
+  },
+  main: {
+    backgroundColor: '#FFF',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '20%',
+    padding: '5%',
+
+    borderRadius: 24,
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  input: {
+    marginBottom: 16,
   },
   separator: {
     marginVertical: 30,
