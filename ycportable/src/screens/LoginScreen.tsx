@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { LoginButton } from '../components/LoginButton';
 import { useAuth } from '../hooks/useAuth';
 import { theme } from '../theme';
@@ -9,9 +9,21 @@ export default function LoginScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login Screen</Text>
+      <ImageBackground
+        source={require('../assets/images/background.png')}
+        resizeMode='cover'
+        style={styles.background}
+      >
+        <View style={styles.backgroundDarken} />
+      </ImageBackground>
 
-      <LoginButton onPress={login} isLoading={false} />
+      <View style={styles.loginButtonContainer}>
+        <Image
+          source={require('../assets/images/logo.svg')}
+          style={styles.logo}
+        />
+        <LoginButton onPress={login} isLoading={false} />
+      </View>
     </View>
   );
 }
@@ -19,17 +31,33 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  backgroundDarken: {
+    backgroundColor: 'rgba(0,0,0, 0.40)',
+    flex: 1,
+  },
+  background: {
+    width: '100%',
+    height: '100%',
+    flex: 1,
+  },
+
+  loginButtonContainer: {
+    height: 340,
+
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 12,
+    gap: 40,
+
+    borderRadius: 24,
+
+    marginTop: -50,
+
+    backgroundColor: theme.colors.white,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  label: {
-    color: theme.colors.black,
-    fontSize: 12,
-    marginBottom: 4,
+
+  logo: {
+    height: 48,
+    width: 162,
   },
 });
