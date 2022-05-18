@@ -45,7 +45,7 @@ export default function DashboardScreen({
     if (token) {
       setCampaignUpdateStatus('');
       fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
-        (campaigns) => setCampaigns(campaigns),
+        (campaigns) => setCampaigns(campaigns)
       );
     }
   }, [pageNumber, searchTerm, campaignState, campaignUpdateStatus]);
@@ -106,7 +106,7 @@ export default function DashboardScreen({
           'Content-Type': 'application/json',
         }),
         method: 'POST',
-      },
+      }
     )
       .then((response) => response.json())
       .then((json) => {
@@ -146,7 +146,7 @@ export default function DashboardScreen({
 
   return (
     <View style={styles.container}>
-      <Header headerText='Dashboard' />
+      <Header headerText="Dashboard" />
       <View style={styles.main}>
         <TabSelector onSelect={setCampaignState} />
         <View style={styles.input}>
@@ -177,7 +177,14 @@ export default function DashboardScreen({
                     </View>
                     <ReturnImage campaign={campaign}></ReturnImage>
                   </View>
-                  <TouchableOpacity
+                  <CampaignButton
+                    campaign={campaign}
+                    onPress={() => {
+                      setSelectedCampaign(campaign);
+                      refRBSheet.current.open();
+                    }}
+                  />
+                  {/* <TouchableOpacity
                     onPress={() => {
                       setSelectedCampaign(campaign);
                       refRBSheet.current.open();
@@ -189,7 +196,7 @@ export default function DashboardScreen({
                       {formatCampaignState(campaign)}
                     </Text>
                     <CaretDown size={16} color={theme.colors.white} />
-                  </TouchableOpacity>
+                  </TouchableOpacity> */}
                   <RBSheet
                     ref={refRBSheet}
                     closeOnDragDown={true}
@@ -214,13 +221,13 @@ export default function DashboardScreen({
             );
           })}
 
-          <Button onPress={clickedPreviousPageButton} title='PreviousPage'>
+          <Button onPress={clickedPreviousPageButton} title="PreviousPage">
             Previous Page
           </Button>
 
           <Text>{pageNumber}</Text>
 
-          <Button onPress={clickedNextPageButton} title='NextPage'>
+          <Button onPress={clickedNextPageButton} title="NextPage">
             Next Page
           </Button>
         </ScrollView>

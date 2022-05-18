@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Text, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { Button, Text, TouchableOpacity, StyleSheet, View, StyleProp, ViewStyle } from 'react-native';
 import { Campaign } from '../..';
 import { theme } from '../theme';
 import { PauseCircle, CaretDown } from 'phosphor-react-native';
+import { Eye } from 'phosphor-react-native';
 
 interface CampaignButtonProps {
   campaign: Campaign;
+  onPress: () => void;
 }
 
-export function CampaignButton({ campaign }: CampaignButtonProps) {
+export function CampaignButton({ campaign, onPress }: CampaignButtonProps) {
   const [campaignStateDisplay, setCampaignStateDisplay] = useState('');
 
   useEffect(() => {
@@ -46,15 +48,44 @@ export function CampaignButton({ campaign }: CampaignButtonProps) {
     const campaignState = campaign.state;
 
     if (campaignState === 'paused') {
-      return <PauseCircle />;
+      return <PauseCircle size={16} color={theme.colors.white} weight="thin" />;
+    }
+
+    if (campaignState === 'live') {
+      return <Eye color={theme.colors.white} />;
     }
   };
 
+  // const setStyles = (campaign: Campaign): StyleProp<ViewStyle> => {
+  //   const campaignState = campaign.state;
+
+  //   if (campaignState === 'live') {
+  //     const styles = {
+  //       ...defaultStyles,
+  //       button: {
+  //         ...defaultStyles.button,
+  //         borderColor: 'green',
+  //         backgroundColor: 'green'
+  //       }
+  //     }
+  //     return StyleSheet.create({styles});
+  //     return StyleSheet.create({
+  //       ...styles,
+  //       button: {
+  //         ...styles.button,
+  //         borderColor: 'green',
+  //         backgroundColor: 'green',
+  //       },
+  //     });
+  //   }
+  // };
+
   return (
-    <TouchableOpacity style={styles.button}>
+    // <TouchableOpacity style={setStyles(campaign)} onPress={onPress}>
+    <TouchableOpacity style={styles} onPress={onPress}>
       <View style={styles.icon1}>{setIcon(campaign)}</View>
-      <Text>{campaignStateDisplay}</Text>
-      <CaretDown style={styles.icon2} />
+      <Text style={styles.text}>{campaignStateDisplay}</Text>
+      <CaretDown color={theme.colors.white} />
     </TouchableOpacity>
   );
 }
@@ -87,7 +118,7 @@ const styles = StyleSheet.create({
   },
   text: {
     // flex: 2,
-    marginHorizontal: '80%',
+    // marginHorizontal: '80%',
     color: theme.colors.white,
   },
   selectedTab: {
