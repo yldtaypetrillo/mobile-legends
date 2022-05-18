@@ -1,90 +1,92 @@
-import React,{ useEffect, useRef, useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { CampaignConfiguration } from '../..';
 import { RootTabScreenProps } from '../../types';
 import { CampaignImageComponent } from '../components/CampaignImageComponent';
 import { EmailCampaignImageComponent } from '../components/EmailCampaignImageComponent';
 import { Input } from '../components/Input';
+import { TabSelector } from '../components/TabSelector';
 import { isEmailCampaign, returnImageProps } from '../components/utils';
 import { useAuth } from '../hooks/useAuth';
+import { fetchCampaigns } from '../utils/fetchCampaigns';
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function DashboardScreen({
+  navigation,
+}: RootTabScreenProps<'Dashboard'>) {
+  const [campaigns, setCampaigns] = useState<CampaignConfiguration[]>([]);
   const [pageNumber, setPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState('')
-  const [state, setState] = useState<CampaignConfiguration[]>([])
+  const [searchTerm, setSearchTerm] = useState('');
+  const [campaignState, setCampaignState] = useState('');
   const { token } = useAuth();
 
   useEffect(() => {
-    onPressTouch
-    fetch(
-      `https://viserion.yieldify-dev.com/v2/organizations/1/websites/1/campaigns?page=${pageNumber}&per_page=15&order[name]=asc${searchTerm}`,
-      {
-        headers: new Headers({
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        }),
-      }
-    )
-      .then((response) => response.json())
-      .then((json) => {
-        setState(json); // access json.body here
-      }).catch((err) => alert(err))
-  }, [pageNumber, searchTerm]);
+    onPressTouch();
+    if (token) {
+      fetchCampaigns({ token, pageNumber, searchTerm, campaignState }).then(
+        (campaigns) => setCampaigns(campaigns)
+      );
+    }
+  }, [pageNumber, searchTerm, campaignState]);
 
   const clickedNextPageButton = () => {
-    if (state.map((campaign) => { campaign }).length < 15) {
-      console.log('Last page')
-      return
+    if (
+      campaigns.map((campaign) => {
+        campaign;
+      }).length < 15
+    ) {
+      console.log('Last page');
+      return;
     }
-    onPressTouch()
+    onPressTouch();
     setPage(pageNumber + 1);
-  }
+  };
 
   const clickedPreviousPageButton = () => {
     if (pageNumber === 1) {
-      return
+      return;
     }
-    onPressTouch()
+    onPressTouch();
     setPage(pageNumber - 1);
-  }
+  };
 
   const onPressTouch = () => {
     scrollRef.current?.scrollTo({
       y: 0,
       animated: true,
     });
-  }
+  };
 
-  const scrollRef = useRef<ScrollView>(null)
+  const scrollRef = useRef<ScrollView>(null);
+
   return (
     <View style={styles.container}>
+      <TabSelector onSelect={setCampaignState}></TabSelector>
+      <Input
+        error={false}
+        placeholder={'Search campaigns by name or ID'}
+        onChangeText={(text: string) => setSearchTerm(text)}
+      />
       <ScrollView ref={scrollRef}>
-        <Input error={false} placeholder={'Search campaigns by name or ID'} isPassword={false} onChangeText={(text: string) => text != '' ? setSearchTerm(`&search[filter]=${text}`) : setSearchTerm('')} />
-        {state.map((campaign) => {
+        {campaigns.map((campaign) => {
           return (
             <View key={campaign.id}>
               <Text>{campaign.name}</Text>
               <ReturnImage campaign={campaign}></ReturnImage>
-            </View>)
+            </View>
+          );
         })}
 
-        <Button
-          onPress={clickedPreviousPageButton}
-          title='PreviousPage'
-        >
+        <Button onPress={clickedPreviousPageButton} title="PreviousPage">
           Previous Page
         </Button>
 
         <Text>{pageNumber}</Text>
 
-        <Button
-          onPress={clickedNextPageButton}
-          title='NextPage'
-        >
+        <Button onPress={clickedNextPageButton} title="NextPage">
           Next Page
         </Button>
       </ScrollView>
-    </View >
+    </View>
   );
 }
 
@@ -101,6 +103,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: '20%',
   },
   title: {
     fontSize: 20,
